@@ -274,3 +274,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 This project was developed as part of a take-home technical assessment, demonstrating practical application of LLMs for scientific document processing.
+

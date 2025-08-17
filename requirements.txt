@@ -73,3 +73,4 @@ loguru==0.7.2
 # Development Dependencies
 pre-commit==3.5.0
 bump2version==1.0.1
+
