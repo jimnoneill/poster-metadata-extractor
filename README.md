@@ -1,14 +1,18 @@
 # Scientific Poster Metadata Extraction
 
-## Executive Summary: A Three-Tiered Scientific Solution
+## Executive Summary: Three Methods for Scientific Poster Metadata Extraction
 
-The challenge of extracting structured metadata from scientific posters demands a methodologically rigorous approach that balances accuracy, cost, and scientific transparency. Our solution addresses this through a **progressive three-tiered architecture** designed to meet the original take-home task requirements while providing a clear pathway from rapid prototyping to production-ready scientific applications.
+The challenge of extracting structured metadata from scientific posters requires flexible solutions that accommodate different cost constraints, resource availability, and accuracy requirements. Our solution provides **three distinct approaches** to the same problem, each optimized for different operational contexts and user needs.
 
-**Our recommended approach is Method 3: BioELECTRA+CRF** - a transformer-based conditional random field model specifically fine-tuned on biomedical literature. This approach eliminates hallucination risks entirely through deterministic sequence labeling, achieves the highest accuracy estimates (85-92%), and provides the fastest inference times (<0.5 seconds per poster). However, recognizing the practical constraints of training data requirements, we've developed **Methods 1 and 2 as both standalone solutions and data generation engines** for Method 3.
+**Method 1: DeepSeek API** - For users who need immediate deployment with moderate costs (~$0.003/poster). Best balance of ease-of-use and accuracy for most applications.
 
-The elegance of our architecture lies in its **bootstrapping methodology**: Methods 1 (DeepSeek API) and 2 (Qwen2.5-1.5B local) serve dual purposes - they provide immediate extraction capabilities while simultaneously generating the 1,000+ labeled training examples needed to train our preferred BioELECTRA+CRF model. This creates a scientifically sound pathway from rapid deployment to long-term accuracy optimization, addressing the original task's requirement for both practical implementation and rigorous methodology.
+**Method 2: Qwen Local** - For users with GPU resources who prioritize zero ongoing costs and data privacy. Runs entirely on local hardware with competitive accuracy.
 
-Each method targets different operational contexts: Method 1 for immediate high-volume deployment, Method 2 for privacy-sensitive and resource-constrained environments, and Method 3 as our scientifically optimal endpoint that leverages insights from both predecessors.
+**Method 3: BioELECTRA+CRF** - For users who need the highest accuracy and fastest processing, and can invest in creating training data. Eliminates hallucination risks through deterministic sequence labeling.
+
+**The choice depends entirely on your resources and requirements**: If you have API budget and need quick deployment, use Method 1. If you have local GPU resources and prioritize privacy/zero costs, use Method 2. If you can invest in training data and need maximum accuracy with zero hallucination, Method 3 is optimal.
+
+Additionally, Methods 1 and 2 can serve as **data generation tools** for training Method 3, allowing users to bootstrap their way to the highest-accuracy solution by auto-labeling posters for CRF training.
 
 ## Important Note on Accuracy
 
