@@ -1,92 +1,213 @@
-# Scientific Poster Metadata Extraction Toolkit
+# Scientific Poster Metadata Extraction
 
-Three approaches for extracting structured metadata from scientific posters, each optimized for different use cases.
+A comprehensive toolkit for extracting structured metadata from scientific poster PDFs using three distinct approaches, each optimized for different use cases and accuracy requirements.
 
-## 📊 Approach Comparison
+## Three-Method Approach
 
-| Approach | Accuracy | Cost | Speed | Setup | Best For |
-|----------|----------|------|-------|-------|----------|
-| **DeepSeek API** | 90-95% | $0.003/poster | 5-10s | Easy | High accuracy needs |
-| **Qwen 1.5B Local** | 85-90% | Free | 2-5s | Medium | Private, cost-effective |
-| **Transformer+CRF** | 88-92%* | Free | <1s | Complex | Research/interpretability |
+### Method 1: DeepSeek API Extraction
+**Notebooks**: [`01_method1_deepseek_api.ipynb`](notebooks/01_method1_deepseek_api.ipynb)
 
-*With sufficient training data
+Cost-effective API-based extraction using DeepSeek's language model.
 
-## 🚀 Quick Start
+**Performance Characteristics:**
+- **Estimated Accuracy**: 85-90% (requires validation via Cochran sampling)
+- **Cost**: ~$0.003 per poster (200x cheaper than GPT-4)
+- **Speed**: 5-15 seconds per poster  
+- **Hallucination Risk**: Low-Medium (mitigated by structured prompts)
+- **Setup**: Easy - just requires API key
 
+**Best For**: Production systems with budget constraints, high-volume processing
+
+### Method 2: Qwen Local Extraction
+**Notebooks**: [`02_method2_qwen_local.ipynb`](notebooks/02_method2_qwen_local.ipynb)
+
+Local small language model (1.5B parameters) for privacy-sensitive environments.
+
+**Performance Characteristics:**
+- **Estimated Accuracy**: 80-85% (requires validation via Cochran sampling)
+- **Cost**: $0 (runs locally, only electricity costs)
+- **Speed**: 10-40 seconds per poster (hardware dependent)
+- **Hallucination Risk**: Low (structured prompting)
+- **Setup**: Medium - requires model download and GPU memory
+
+**Best For**: Privacy-sensitive environments, budget-conscious deployments, edge computing
+
+### Method 3: BioELECTRA+CRF (DEMO)
+**Notebooks**: [`03_method3_bioelectra_crf_demo.ipynb`](notebooks/03_method3_bioelectra_crf_demo.ipynb)
+
+⚠️ **DEMONSTRATION ONLY** - Future possibility requiring 500-1000 labeled posters for training.
+
+**Performance Characteristics (Estimated):**
+- **Estimated Accuracy**: 85-92% (based on BLURB biomedical benchmarks)
+- **Cost**: $0 (after training - local inference only)  
+- **Speed**: <0.5 seconds per poster (fastest of all methods)
+- **Hallucination Risk**: 0% (deterministic sequence labeling)
+- **Setup**: Complex - requires extensive training data
+
+**Training Requirements**: 500-1000 manually labeled poster PDFs with BIO annotations
+
+## Approach Comparison
+
+| Feature | Method 1 (DeepSeek) | Method 2 (Qwen Local) | Method 3 (BioELECTRA) |
+|---------|--------------------|-----------------------|----------------------|
+| **Accuracy** | 85-90% | 80-85% | 85-92% (est.) |
+| **Cost per poster** | $0.003 | $0 | $0 |
+| **Speed** | 5-15s | 10-40s | <0.5s |
+| **Privacy** | External API | Local | Local |
+| **Setup complexity** | Easy | Medium | Complex |
+| **Hallucination** | Low-Med | Low | None |
+| **Training required** | No | No | Yes (500-1000 posters) |
+
+## Quality Validation Framework
+
+### Cochran's Sampling for Manual Validation
+
+We strongly recommend validating extraction quality using **Cochran's formula** for statistically significant sample size determination:
+
+```
+n = (Z² × p × (1-p)) / e²
+```
+
+**Where:**
+- **Z** = 1.96 (95% confidence level)
+- **p** = 0.5 (maximum variability assumption)
+- **e** = 0.05 (±5% margin of error)
+
+**Sample Sizes by Dataset:**
+- **1000 posters**: Validate ~384 randomly selected outputs
+- **500 posters**: Validate ~218 randomly selected outputs  
+- **100 posters**: Validate ~80 randomly selected outputs
+
+**Validation Process:**
+1. Extract metadata from full dataset
+2. Randomly sample using calculated sample size
+3. Expert manual review of sampled outputs
+4. Calculate accuracy metrics (precision, recall, F1)
+5. Apply correction factors to full dataset if needed
+
+This ensures statistically significant quality assessment across all methods.
+
+### Accuracy Measurement Guidelines
+
+**Field-specific accuracy calculation:**
+- **Title**: Exact match or semantic similarity >0.8
+- **Authors**: Name matching with fuzzy string matching (edit distance <2)
+- **Keywords**: Overlap coefficient >0.6 with expert annotations
+- **Methods/Results**: BLEU score >0.7 compared to expert summaries
+
+## Project Structure
+
+```
+poster_project/
+├── notebooks/
+│   ├── 01_method1_deepseek_api.ipynb      # DeepSeek API extraction
+│   ├── 02_method2_qwen_local.ipynb        # Qwen local model
+│   └── 03_method3_bioelectra_crf_demo.ipynb # BioELECTRA demo
+├── scripts/
+│   ├── method1_deepseek_api.py            # API extraction script
+│   ├── method2_qwen_local.py             # Local model script
+│   └── method3_bioelectra_crf_demo.py    # Demo script
+├── output/                               # Extraction results
+├── src/                                 # Reusable modules
+├── test-poster.pdf                      # Sample poster for testing
+├── requirements.txt                     # Dependencies
+└── README.md                           # This file
+```
+
+## Installation & Setup
+
+### 1. Environment Setup
 ```bash
-# Install dependencies
+git clone https://github.com/jimnoneill/poster-metadata-extractor.git
+cd poster-metadata-extractor
 pip install -r requirements.txt
-
-# Set API key (for DeepSeek approach)
-export DEEPSEEK_API_KEY="your-key-here"
-
-# Run notebooks in notebooks/ directory
 ```
 
-## 📁 Repository Contents
+### 2. API Configuration (Method 1)
+```bash
+cp env.example .env
+# Edit .env and add your DEEPSEEK_API_KEY
+```
 
-- `notebooks/poster_metadata_extraction.ipynb` - DeepSeek/LLM API approach
-- `notebooks/qwen_small_lm_extraction.ipynb` - Local Qwen 1.5B model  
-- `notebooks/advanced_nlp_extraction.ipynb` - Transformer+CRF demo
-- `poster-crf-model/` - CRF training code (for future development)
+### 3. GPU Setup (Method 2)
+For optimal performance with Qwen local model:
+- CUDA-capable GPU with 8GB+ VRAM
+- PyTorch with CUDA support
 
-## 🔍 Approach Details
+## Usage
 
-### 1. DeepSeek API (Recommended)
-**Pros:**
-- Highest accuracy, handles complex layouts
-- No training required, easy setup
-- Supports multiple providers (OpenAI, Anthropic, Groq)
-
-**Cons:**
-- Requires API key and internet
-- Per-poster costs
-- Privacy concerns
-
-### 2. Qwen 1.5B Local
-**Pros:**
-- Good accuracy/efficiency balance
-- Runs locally, no API costs
-- Can be fine-tuned
-
-**Cons:**
-- Slightly lower accuracy
-- Requires GPU (4GB+ VRAM)
-- Limited context window
-
-### 3. Transformer+CRF (Demo)
-**Pros:**
-- Zero hallucination
-- Very fast inference
-- Interpretable results
-
-**Cons:**
-- Requires 500-1000 labeled posters for training
-- Complex training pipeline
-- Currently demo only
-
-## 📈 CRF Training Recommendations
-
-### Data Requirements
-- **Minimum**: 500-1000 labeled posters
-- **Per entity**: 100+ examples
-- **Diversity**: Multiple conferences/layouts
-
-### Simpler Alternatives
-1. **Pure CRF**: 200-500 posters, 75-80% accuracy
-2. **BiLSTM-CRF**: 300-700 posters, 82-87% accuracy  
-3. **spaCy NER**: 300-500 posters, 80-85% accuracy
-
-## ✅ Quality Validation
-
-Use Cochran's sampling for manual validation:
-
+### Quick Start
 ```python
-# For 1000 posters, validate ~278 random samples
-sample_size = int(1.96**2 * 0.5 * 0.5 / 0.05**2)  # 95% confidence, 5% margin
+# Method 1: DeepSeek API
+from scripts.method1_deepseek_api import extract_poster_metadata
+results = extract_poster_metadata("your-poster.pdf")
+
+# Method 2: Qwen Local  
+from scripts.method2_qwen_local import extract_poster_metadata_qwen
+results = extract_poster_metadata_qwen("your-poster.pdf")
+
+# Method 3: Demo only
+from scripts.method3_bioelectra_crf_demo import bioelectra_crf_demo
+demo_results = bioelectra_crf_demo()
 ```
 
-## 📄 License
+### Notebook Execution
+All notebooks are ready to run with pre-executed outputs:
+1. Open desired method notebook in Jupyter
+2. Set API keys if using Method 1
+3. Run all cells to see extraction results
 
-MIT License - See LICENSE file for details.
+## Key Technologies by Method
+
+### Method 1 (DeepSeek API)
+- **DeepSeek Chat**: Cost-effective LLM with competitive performance
+- **OpenAI-compatible API**: Easy integration
+- **Structured prompting**: JSON schema enforcement
+- **PyMuPDF**: PDF text extraction
+
+### Method 2 (Qwen Local)
+- **Qwen2.5-1.5B-Instruct**: Compact multilingual model
+- **Transformers**: HuggingFace model loading
+- **BitsAndBytes**: 8-bit quantization for memory efficiency
+- **Few-shot prompting**: Task-specific extraction
+
+### Method 3 (BioELECTRA Demo)
+- **BioELECTRA**: Biomedical domain-optimized transformer (2nd on BLURB)
+- **Conditional Random Fields**: Sequence labeling for entity extraction
+- **BIO tagging**: Named entity recognition scheme
+- **PyTorch CRF**: Implementation of CRF layer
+
+## Recommendations
+
+### For Production Use
+1. **Start with Method 1** (DeepSeek API) for immediate deployment
+2. **Implement Cochran sampling** for quality validation  
+3. **Consider Method 2** for privacy-sensitive applications
+4. **Plan Method 3** as long-term solution with proper training data
+
+### For BioELECTRA Training (Method 3)
+- **Collect 500-1000 poster PDFs** with diverse layouts and fields
+- **Manual BIO annotation** (~40-60 expert hours)  
+- **Entity types**: Title, Authors, Affiliations, Methods, Results, Funding
+- **Alternative simpler approaches**: Rule-based NER, spaCy custom models
+- **Validation**: Cross-validation on held-out test set
+
+## License
+MIT License - see LICENSE file for details.
+
+## Contributing
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/improvement`)
+3. Commit changes (`git commit -am 'Add improvement'`)
+4. Push to branch (`git push origin feature/improvement`)
+5. Create Pull Request
+
+## Citation
+```bibtex
+@software{oneill2024poster,
+  title={Scientific Poster Metadata Extraction Toolkit},
+  author={O'Neill, Jim},
+  year={2024},
+  url={https://github.com/jimnoneill/poster-metadata-extractor}
+}
+```

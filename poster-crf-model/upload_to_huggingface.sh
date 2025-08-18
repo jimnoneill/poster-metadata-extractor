@@ -33,3 +33,4 @@ echo "========================================"
 echo ""
 echo "Model files ready for upload:"
 ls -la *.pt *.bin *.json *.txt *.md 2>/dev/null | grep -E "\.(pt|bin|json|txt|md)$"
+
