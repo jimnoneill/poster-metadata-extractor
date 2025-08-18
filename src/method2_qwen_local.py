@@ -238,7 +238,7 @@ def extract_poster_metadata_qwen(pdf_path: str) -> Dict[str, Any]:
 
 if __name__ == "__main__":
     # Test the extraction
-    pdf_path = "/home/joneill/poster_project/test-poster.pdf"
+    pdf_path = "/home/joneill/poster_project/data/test-poster.pdf"
     
     if Path(pdf_path).exists():
         print("🚀 Running Method 2: Qwen Local Extraction")

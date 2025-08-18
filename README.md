@@ -50,23 +50,27 @@ This repository directly addresses the original take-home task requirements with
 
 ### Tools, Models, and Infrastructure
 
-**Primary Tools (All Open Source):**
-- **PyMuPDF**: PDF text extraction
-- **Transformers**: HuggingFace model loading and inference
-- **PyTorch**: Deep learning framework
-- **NLTK/spaCy**: Natural language processing utilities
-- **PyTorch-CRF**: Conditional Random Fields implementation
-- **Jupyter**: Interactive development and demonstration
+**Core Technologies:**
+- **PyMuPDF (fitz)**: PDF text extraction engine
+- **OpenAI Python SDK**: API client for Method 1
+- **HuggingFace Transformers**: Model loading and inference for Method 2
+- **PyTorch**: Deep learning framework with CUDA support
+- **python-dotenv**: Secure environment variable management
+- **Jupyter**: Interactive development and execution
 
 **Models by Method:**
-- **Method 1**: DeepSeek-Chat (API-based, cost-effective alternative to GPT-4)
-- **Method 2**: Qwen2.5-1.5B-Instruct (local inference, privacy-preserving)
-- **Method 3**: BioELECTRA-base + CRF layer (domain-optimized, deterministic)
+- **Method 1**: DeepSeek-Chat API (cost-effective, ~$0.003/poster)
+- **Method 2**: Qwen2.5-1.5B-Instruct (local inference, 8-bit quantized)
+- **Method 3**: BioELECTRA-base + CRF layer (demo only - requires training)
 
-**Infrastructure:**
-- **Development**: Local development with GPU support (RTX 4090 recommended)
-- **Deployment Options**: CPU-only for Method 1, GPU-accelerated for Methods 2-3
-- **API Integration**: OpenAI-compatible endpoints (DeepSeek, OpenAI, Anthropic, Groq)
+**Hardware Requirements:**
+- **Method 1**: Any system with internet (CPU sufficient)
+- **Method 2**: CUDA GPU with 8GB+ VRAM (RTX 4090 recommended for batching)
+- **Method 3**: Same as Method 2 (after training completion)
+
+**API Integration:**
+- **DeepSeek API**: Primary endpoint (OpenAI-compatible)
+- **Environment Variables**: API keys loaded securely via .env file
 
 ### Assumptions and Dependencies
 
@@ -232,19 +236,24 @@ This ensures statistically significant quality assessment across all methods.
 
 ```
 poster_project/
-├── notebooks/
-│   ├── 01_method1_deepseek_api.ipynb      # DeepSeek API extraction
-│   ├── 02_method2_qwen_local.ipynb        # Qwen local model
+├── notebooks/                            # Jupyter notebooks with execution outputs
+│   ├── 01_method1_deepseek_api.ipynb    # DeepSeek API extraction
+│   ├── 02_method2_qwen_local.ipynb      # Qwen local model  
 │   └── 03_method3_bioelectra_crf_demo.ipynb # BioELECTRA demo
-├── scripts/
-│   ├── method1_deepseek_api.py            # API extraction script
-│   ├── method2_qwen_local.py             # Local model script
-│   └── method3_bioelectra_crf_demo.py    # Demo script
-├── output/                               # Extraction results
-├── src/                                 # Reusable modules
-├── test-poster.pdf                      # Sample poster for testing
-├── requirements.txt                     # Dependencies
-└── README.md                           # This file
+├── src/                                 # Python implementation scripts
+│   ├── method1_deepseek_api.py          # API extraction script
+│   ├── method2_qwen_local.py            # Local model script
+│   └── method3_bioelectra_crf_demo.py   # Demo script
+├── data/                                # Sample data and test files
+│   ├── test-poster.pdf                  # Sample poster for testing
+│   └── Take-home-task.pdf               # Original assignment
+├── output/                              # Generated extraction results
+│   ├── method1_deepseek_results.json    # DeepSeek API results
+│   ├── method2_qwen_results.json        # Qwen local results
+│   └── method3_bioelectra_demo.json     # Demo results
+├── requirements.txt                     # Python dependencies
+├── env.example                          # Environment variables template
+└── README.md                            # This documentation
 ```
 
 ## Installation & Setup
@@ -272,15 +281,15 @@ For optimal performance with Qwen local model:
 ### Quick Start
 ```python
 # Method 1: DeepSeek API
-from scripts.method1_deepseek_api import extract_poster_metadata
-results = extract_poster_metadata("your-poster.pdf")
+from src.method1_deepseek_api import extract_poster_metadata
+results = extract_poster_metadata("data/your-poster.pdf")
 
 # Method 2: Qwen Local  
-from scripts.method2_qwen_local import extract_poster_metadata_qwen
-results = extract_poster_metadata_qwen("your-poster.pdf")
+from src.method2_qwen_local import extract_poster_metadata_qwen
+results = extract_poster_metadata_qwen("data/your-poster.pdf")
 
 # Method 3: Demo only
-from scripts.method3_bioelectra_crf_demo import bioelectra_crf_demo
+from src.method3_bioelectra_crf_demo import bioelectra_crf_demo
 demo_results = bioelectra_crf_demo()
 ```
 
@@ -290,25 +299,25 @@ All notebooks are ready to run with pre-executed outputs:
 2. Set API keys if using Method 1
 3. Run all cells to see extraction results
 
-## Key Technologies by Method
+## Implementation Details by Method
 
-### Method 1 (DeepSeek API)
-- **DeepSeek Chat**: Cost-effective LLM with competitive performance
-- **OpenAI-compatible API**: Easy integration
-- **Structured prompting**: JSON schema enforcement
-- **PyMuPDF**: PDF text extraction
+### Method 1: DeepSeek API
+- **Core**: DeepSeek-Chat API with enhanced structured prompting
+- **Dependencies**: `openai`, `python-dotenv`, `PyMuPDF`
+- **Features**: JSON schema enforcement, cost tracking, fallback handling
+- **Authentication**: Secure API key loading via environment variables
 
-### Method 2 (Qwen Local)
-- **Qwen2.5-1.5B-Instruct**: Compact multilingual model
-- **Transformers**: HuggingFace model loading
-- **BitsAndBytes**: 8-bit quantization for memory efficiency
-- **Few-shot prompting**: Task-specific extraction
+### Method 2: Qwen Local
+- **Core**: Qwen2.5-1.5B-Instruct with 8-bit quantization
+- **Dependencies**: `torch`, `transformers`, `bitsandbytes`, `accelerate`
+- **Features**: Few-shot prompting, GPU batching, memory optimization
+- **Optimization**: CUDA acceleration with stderr suppression for clean execution
 
-### Method 3 (BioELECTRA Demo)
-- **BioELECTRA**: Biomedical domain-optimized transformer (2nd on BLURB)
-- **Conditional Random Fields**: Sequence labeling for entity extraction
-- **BIO tagging**: Named entity recognition scheme
-- **PyTorch CRF**: Implementation of CRF layer
+### Method 3: BioELECTRA Demo
+- **Core**: BioELECTRA-base + CRF layer (demonstration framework)
+- **Dependencies**: `pytorch-crf`, `spacy`, `scikit-learn`
+- **Features**: Sequence labeling, deterministic extraction, zero hallucination
+- **Status**: Demo only - requires training data for production use
 
 ## Recommendations
 

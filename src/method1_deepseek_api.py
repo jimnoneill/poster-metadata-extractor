@@ -175,7 +175,7 @@ def create_demo_results() -> Dict:
 
 if __name__ == "__main__":
     # Test the extraction
-    pdf_path = "/home/joneill/poster_project/test-poster.pdf"
+    pdf_path = "/home/joneill/poster_project/data/test-poster.pdf"
     
     if Path(pdf_path).exists():
         print("🚀 Running Method 1: DeepSeek API Extraction")
