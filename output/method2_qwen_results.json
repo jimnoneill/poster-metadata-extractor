@@ -17,7 +17,7 @@
       "name": "Enrica Chiesa"
     }
   ],
-  "summary": "The poster discusses the influence of drug-polymer interactions on release kinetics of poly(lactic-co-glycolic acid) (PLGA) and polylactide/ethylene glycol copolymers (PLA/PEG) nanoparticles in microfluidic systems, highlighting their potential to improve antimicrobial resistance by providing precise control over nanocarrier characteristics and encapsulation efficiency.",
+  "summary": "The poster discusses the influence of drug-polymer interactions on release kinetics of poly(lactic-co-glycolic acid) (PLGA) and polylactide/ethylene glycol copolymers nanoparticles (PLA/PEG-NPs), presenting results from microfluidic-based synthesis and discussing their potential in improving antimicrobial resistance through controlled drug delivery systems.",
   "keywords": [
     "ANTIMICROBIAL RESISTANCE",
     "DRUG POLYMERS",
@@ -28,8 +28,8 @@
     "HEALTH THREAT",
     "GLOBAL HEALTH"
   ],
-  "methods": "The text does not contain any specific methodological details or experimental procedures related to the influence of drug-polymer interactions on release kinetics of PLGA and PLA/PEG nanoparticles. It appears to be an abstract or introduction section discussing antimicrobial resistance and microfluidic synthesis of nano-sized carriers for drug delivery systems.",
-  "results": "The release kinetics of poly(lactic-co-glycolic acid) (PLGA) and polylactide-co-ethylene glycol copolymer nanoparticles (PLA/PEG-NPs) were studied in microfluidic devices to understand their influence on drug-polymer interactions. The study aimed to develop novel drug delivery systems that can improve encapsulation efficiency and provide precise control over nanocarrier characteristics.",
+  "methods": "The text does not contain any specific methods section. It appears to be an abstract or introduction to a research paper discussing the influence of drug-polymer interactions on release kinetics in poly(lactic-co-glycolic acid) (PLGA) and polylactide-co-ethylene glycol diacrylate (PLA/PEG-NPs) nanoparticles. The Methods section would typically detail experimental procedures used in such studies but is absent here.",
+  "results": "The study investigates how drug-polymer interactions affect the release kinetics of Poly(lactic-co-glycolic acid) (PLGA) nanoparticles and Polylactide-co-Glycolide (PLA)/Polyethylene Glycol (PEG) nanoparticles. The research aims to develop more effective drug delivery systems by optimizing these carrier properties.",
   "references": [],
   "funding_sources": [],
   "conference_info": {
@@ -37,8 +37,8 @@
     "date": null
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-18T15:03:24.914710",
-    "processing_time": 40.23085379600525,
+    "timestamp": "2025-08-18T16:00:24.726351",
+    "processing_time": 38.70360088348389,
     "method": "qwen_local",
     "model": "Qwen2.5-1.5B-Instruct",
     "device": "cuda:0",

@@ -39,19 +39,19 @@
       "email": null
     }
   ],
-  "summary": "The study investigates the influence of drug-polymer interactions on the release kinetics of PLGA and PLA/PEG nanoparticles (NPs) for controlled drug delivery. Key findings highlight that CURC-loaded PLGA NPs exhibit slower release rates and higher encapsulation efficiency, making them suitable for controlled delivery in regenerative medicine.",
+  "summary": "The study investigates the influence of drug-polymer interactions on the release kinetics of PLGA and PLA/PEG nanoparticles (NPs) for controlled drug delivery. Key findings highlight that CURC-loaded PLGA NPs exhibit slower release rates and higher encapsulation efficiency due to hydrophobic interactions, making them suitable for controlled delivery in regenerative medicine.",
   "keywords": [
     "antimicrobial resistance",
     "microfluidic synthesis",
-    "nanoparticles",
     "drug-polymer interactions",
+    "PLGA NPs",
+    "PLA/PEG micelles",
+    "curcumin",
     "release kinetics",
-    "encapsulation efficiency",
-    "cytotoxicity",
-    "PLGA"
+    "encapsulation efficiency"
   ],
-  "methods": "Microfluidic-based synthesis was used to prepare nano-sized carriers (PLGA NPs and PLA/PEG micelles) for drug delivery. The study involved physical characterization of NPs, drug loading, release kinetics analysis, and cytotoxicity assessment.",
-  "results": "NPs had uniform size distribution with PDI \u22640.2. PLGA NPs showed a diameter (D\u2095) of 61.91 \u00b1 1.86 nm, zeta potential (\u03b6) of 13.74 \u00b1 0.97 mV, and encapsulation efficiency (EE%) of 2.81 \u00b1 0.81 \u00b5g/mg. CURC-loaded PLGA NPs exhibited slower release rates and higher encapsulation efficiency compared to PLA/PEG micelles. No or slight cytotoxic effects were observed on NHDFs.",
+  "methods": "Microfluidic-based synthesis was used to prepare nano-sized carriers (PLGA NPs and PLA/PEG micelles) loaded with curcumin (CURC). The NPs were characterized for physical properties, drug loading, and release kinetics. Cytotoxicity and antimicrobial activity were also evaluated.",
+  "results": "NPs had uniform size distribution with PDI \u22640.2. PLGA NPs showed a diameter (D\u2095) of 61.91 \u00b1 1.86 nm and zeta potential (\u03b6) of 13.74 \u00b1 0.97 mV. CURC loading was 2.81 \u00b1 0.81 \u00b5g/mg for PLGA NPs and 2.51 \u00b1 0.57 \u00b5g/mg for PLA/PEG micelles. CURC-loaded PLGA NPs exhibited slower release rates and higher encapsulation efficiency. No or slight cytotoxic effects were observed on NHDFs.",
   "references": [
     {
       "title": "Front. Bioeng. Biotechnol.",
@@ -66,10 +66,10 @@
       "journal": "Biomed. Pharmacother."
     },
     {
-      "title": "International Jo...",
+      "title": "International Journal...",
       "authors": "Chiesa et al.",
       "year": null,
-      "journal": null
+      "journal": "International Journal..."
     }
   ],
   "funding_sources": [],
@@ -78,11 +78,11 @@
     "date": "15-17 May"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-18T15:24:45.113831",
-    "processing_time": 41.86679244041443,
+    "timestamp": "2025-08-18T15:59:37.491881",
+    "processing_time": 30.153148889541626,
     "method": "deepseek_api",
     "model": "deepseek-chat",
-    "estimated_cost": 0.0006627600000000001,
-    "text_length": 3734
+    "estimated_cost": 0.0006623400000000001,
+    "text_length": 3731
   }
 }
