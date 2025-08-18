@@ -44,29 +44,38 @@ def extract_text_from_pdf(pdf_path: str) -> str:
     return text.strip()
 
 def create_extraction_prompt(text: str) -> str:
-    """Create structured prompt for metadata extraction"""
-    return f"""Extract structured metadata from this scientific poster text in JSON format:
+    """Create enhanced structured prompt for metadata extraction"""
+    return f"""You are a scientific metadata extraction expert. Extract structured information from this poster text with high precision.
 
-{text[:2000]}...
+POSTER TEXT:
+{text[:2500]}...
 
-Return JSON with these fields:
+EXTRACTION INSTRUCTIONS:
+1. Look for title in ALL CAPS or large text at the top
+2. Find all author names (often with superscript numbers for affiliations)  
+3. Identify institutional affiliations (usually below authors)
+4. Extract 6-8 specific keywords from methods and results sections
+5. Summarize key findings concisely
+6. Find funding acknowledgments (often at bottom)
+
+Return ONLY valid JSON in this exact format:
 {{
-  "title": "poster title",
+  "title": "exact poster title as written",
   "authors": [
-    {{"name": "Author Name", "affiliations": ["Institution"], "email": "email or null"}}
+    {{"name": "Full Name", "affiliations": ["University/Institution"], "email": "email@domain.com or null"}}
   ],
-  "summary": "concise summary", 
-  "keywords": ["keyword1", "keyword2"],
-  "methods": "methods description",
-  "results": "main findings",
+  "summary": "2-sentence summary of research objective and main finding",
+  "keywords": ["specific", "technical", "terms", "from", "poster", "content"],
+  "methods": "detailed methodology description from poster",
+  "results": "quantitative results and key findings with numbers if present",
   "references": [
-    {{"title": "ref title", "authors": "authors", "year": 2024, "journal": "journal"}}
+    {{"title": "paper title", "authors": "author names", "year": 2024, "journal": "journal name"}}
   ],
-  "funding_sources": ["funding info"],
-  "conference_info": {{"location": "location", "date": "date"}}
+  "funding_sources": ["specific funding agency or grant numbers"],
+  "conference_info": {{"location": "city, country", "date": "date range"}}
 }}
 
-Extract only information clearly present. Use null for missing data."""
+Be precise and thorough. Extract only information explicitly present in the text."""
 
 def extract_with_deepseek(text: str, api_key: str) -> Dict:
     """Extract metadata using DeepSeek API"""
