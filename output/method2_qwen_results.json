@@ -1,0 +1,47 @@
+{
+  "title": "Influence of Drug-Polymer Interactions on Release Kinetics of PLGA and PLA/PET Nanoparticles",
+  "authors": [
+    {
+      "name": "Merve Gul"
+    },
+    {
+      "name": "Ida Genta"
+    },
+    {
+      "name": "Maria M. Perez Madrigal"
+    },
+    {
+      "name": "Carlos Aleman"
+    },
+    {
+      "name": "Enrica Chiesa"
+    }
+  ],
+  "summary": "The poster discusses the influence of drug-polymer interactions on release kinetics of poly(lactic-co-glycolic acid) (PLGA) and polylactide/ethylene glycol copolymers (PLA/PEG) nanoparticles in microfluidic systems, highlighting their potential to improve antimicrobial resistance by providing precise control over nanocarrier characteristics and encapsulation efficiency.",
+  "keywords": [
+    "ANTIMICROBIAL RESISTANCE",
+    "DRUG POLYMERS",
+    "RELEASE KINETICS",
+    "PLGA",
+    "PLA/PEG",
+    "MULTISCALE SCIENCE",
+    "HEALTH THREAT",
+    "GLOBAL HEALTH"
+  ],
+  "methods": "The text does not contain any specific methodological details or experimental procedures related to the influence of drug-polymer interactions on release kinetics of PLGA and PLA/PEG nanoparticles. It appears to be an abstract or introduction section discussing antimicrobial resistance and microfluidic synthesis of nano-sized carriers for drug delivery systems.",
+  "results": "The release kinetics of poly(lactic-co-glycolic acid) (PLGA) and polylactide-co-ethylene glycol copolymer nanoparticles (PLA/PEG-NPs) were studied in microfluidic devices to understand their influence on drug-polymer interactions. The study aimed to develop novel drug delivery systems that can improve encapsulation efficiency and provide precise control over nanocarrier characteristics.",
+  "references": [],
+  "funding_sources": [],
+  "conference_info": {
+    "location": null,
+    "date": null
+  },
+  "extraction_metadata": {
+    "timestamp": "2025-08-18T15:03:24.914710",
+    "processing_time": 40.23085379600525,
+    "method": "qwen_local",
+    "model": "Qwen2.5-1.5B-Instruct",
+    "device": "cuda:0",
+    "text_length": 3734
+  }
+}

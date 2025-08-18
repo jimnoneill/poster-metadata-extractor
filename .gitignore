@@ -32,9 +32,9 @@ myenv/
 *.pkl
 model_cache/
 
-# Data files
-data/*.pdf
-output/*.json
+# Large data files (keep sample files for demo)
+# data/*.pdf  # Allow sample PDFs for demo
+# output/*.json  # Allow sample results for demo
 output/*.csv
 
 # IDE
