@@ -1,76 +1,38 @@
-# Core Dependencies
-python>=3.9.0
+# Core dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+jupyter>=1.0.0
+ipykernel>=6.0.0
 
-# PDF Processing
-PyMuPDF==1.23.5
-pdfplumber==0.9.0
-pdf2image==1.16.3
+# PDF processing
+PyMuPDF>=1.18.0
+pdfplumber>=0.7.0
 
-# OCR and Image Processing
-pytesseract==0.3.10
-Pillow==10.0.0
-opencv-python==4.8.0.76
+# API-based extraction
+openai>=1.0.0
+anthropic>=0.7.0
+python-dotenv>=0.19.0
+requests>=2.26.0
+pydantic>=2.0.0
 
-# Natural Language Processing
-openai==1.3.5
-anthropic==0.7.7
-spacy==3.7.2
-transformers==4.35.0
-torch==2.1.0
+# Small LM extraction
+torch>=2.0.0
+transformers>=4.30.0
+accelerate>=0.20.0
+bitsandbytes>=0.41.0
+sentencepiece>=0.1.96
 
-# Data Processing and Analysis
-pandas==2.1.3
-numpy==1.24.3
-matplotlib==3.8.1
-seaborn==0.13.0
+# Advanced NLP extraction
+pytorch-crf>=0.7.2
+spacy>=3.4.0
+nltk>=3.7
+rake-nltk>=1.0.6
+textstat>=0.7.3
+scikit-learn>=1.0.0
 
-# JSON Schema and Validation
-jsonschema==4.19.2
-pydantic==2.5.0
-
-# Web and API Tools
-requests==2.31.0
-httpx==0.25.2
-
-# Environment Management
-python-dotenv==1.0.0
-
-# Jupyter and Notebook Support
-jupyter==1.0.0
-jupyterlab==4.0.7
-ipython==8.17.2
-notebook==7.0.6
-
-# Testing Framework
-pytest==7.4.3
-pytest-cov==4.1.0
-pytest-mock==3.12.0
-
-# Code Quality and Formatting
-black==23.11.0
-flake8==6.1.0
-mypy==1.7.1
-
-# Progress Bars and Utilities
-tqdm==4.66.1
-click==8.1.7
-
-# Configuration Management
-pyyaml==6.0.1
-configparser==6.0.0
-
-# Logging and Monitoring
-loguru==0.7.2
-
-# Optional: Local LLM Support
-# sentence-transformers==2.2.2
-# llama-cpp-python==0.2.11
-
-# Optional: Advanced Computer Vision
-# detectron2==0.6
-# layoutparser==0.3.4
-
-# Development Dependencies
-pre-commit==3.5.0
-bump2version==1.0.1
-
+# Utilities
+tqdm>=4.62.0
+loguru>=0.6.0
+jsonschema>=4.0.0
+huggingface-hub>=0.16.0
