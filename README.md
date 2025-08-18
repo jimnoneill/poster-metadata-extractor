@@ -2,6 +2,10 @@
 
 A comprehensive toolkit for extracting structured metadata from scientific poster PDFs using three distinct approaches, each optimized for different use cases and accuracy requirements.
 
+## ⚠️ IMPORTANT DISCLAIMER
+
+**ALL ACCURACY ESTIMATES ARE UNVALIDATED** - These are rough estimates based on limited testing and theoretical benchmarks. **Actual accuracy can only be determined through proper validation using Cochran's random sampling methodology** as outlined in this document. Do not rely on these estimates for production decisions without proper validation.
+
 ## Three-Method Approach
 
 ### Method 1: DeepSeek API Extraction
@@ -10,7 +14,7 @@ A comprehensive toolkit for extracting structured metadata from scientific poste
 Cost-effective API-based extraction using DeepSeek's language model.
 
 **Performance Characteristics:**
-- **Estimated Accuracy**: 85-90% (requires validation via Cochran sampling)
+- **Estimated Accuracy**: 85-90% ⚠️ **(UNVALIDATED - requires Cochran sampling validation)**
 - **Cost**: ~$0.003 per poster (200x cheaper than GPT-4)
 - **Speed**: 5-15 seconds per poster  
 - **Hallucination Risk**: Low-Medium (mitigated by structured prompts)
@@ -24,7 +28,7 @@ Cost-effective API-based extraction using DeepSeek's language model.
 Local small language model (1.5B parameters) for privacy-sensitive environments.
 
 **Performance Characteristics:**
-- **Estimated Accuracy**: 80-85% (requires validation via Cochran sampling)
+- **Estimated Accuracy**: 80-85% ⚠️ **(UNVALIDATED - requires Cochran sampling validation)**
 - **Cost**: $0 (runs locally, only electricity costs)
 - **Speed**: 10-40 seconds per poster (single), ~1.1s per poster (RTX 4090 batched)
 - **Hallucination Risk**: Low (structured prompting)
@@ -43,7 +47,7 @@ Local small language model (1.5B parameters) for privacy-sensitive environments.
 ⚠️ **DEMONSTRATION ONLY** - Future possibility requiring 500-1000 labeled posters for training.
 
 **Performance Characteristics (Estimated):**
-- **Estimated Accuracy**: 85-92% (based on BLURB biomedical benchmarks)
+- **Estimated Accuracy**: 85-92% ⚠️ **(THEORETICAL - based on BLURB benchmarks, requires training & validation)**
 - **Cost**: $0 (after training - local inference only)  
 - **Speed**: <0.5 seconds per poster (fastest of all methods)
 - **Hallucination Risk**: 0% (deterministic sequence labeling)
@@ -57,7 +61,7 @@ Local small language model (1.5B parameters) for privacy-sensitive environments.
 
 | Feature | Method 1 (DeepSeek) | Method 2 (Qwen Local) | Method 3 (BioELECTRA) |
 |---------|--------------------|-----------------------|----------------------|
-| **Accuracy** | 85-90% | 80-85% | 85-92% (est.) |
+| **Accuracy** | 85-90% (unvalidated) | 80-85% (unvalidated) | 85-92% (theoretical) |
 | **Cost per poster** | $0.003 | $0 | $0 |
 | **Speed** | 5-15s | 10-40s | <0.5s |
 | **Privacy** | External API | Local | Local |
