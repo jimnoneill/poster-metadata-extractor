@@ -17,7 +17,7 @@
       "name": "Enrica Chiesa"
     }
   ],
-  "summary": "The poster discusses the influence of drug-polymer interactions on release kinetics in poly(lactic-co-glycolic acid) (PLGA) and polylactide-co-ethylene glycol (PLA/PEG) nanoparticles, highlighting their potential to improve encapsulation efficiency and provide precise control over nanocarrier characteristics. The presentation also mentions that antimicrobial resistance (AMR) is a significant global health issue that necessitates innovative drug delivery strategies.",
+  "summary": "The poster discusses the influence of drug-polymer interactions on release kinetics of poly(lactic-co-glycolic acid) (PLGA) and polylactide/ethylene glycol copolymers (PLA/PEG) nanoparticles in microfluidic systems, highlighting their potential to improve antimicrobial resistance by offering precise control over nanocarrier characteristics and encapsulation efficiency.",
   "keywords": [
     "ANTIMICROBIAL RESISTANCE",
     "DRUG POLYMERS",
@@ -29,7 +29,7 @@
     "GLOBAL HEALTH"
   ],
   "methods": "The text does not contain any specific methodological details or experimental procedures related to the research topic \"Influence of Drug-Polymer Interactions on Release Kinetics of PLGA and PLA/PET Nanoparticles\". The provided text appears to be an abstract or introduction section discussing the background and objectives of the study rather than describing its methodology.",
-  "results": "The study investigates how drug-polymer interactions affect the release kinetics of Poly(lactic-co-glycolic acid) (PLGA) nanoparticles and Polylactide-co-Glycolide (PLA)/Polyethylene Glycol (PEG) nanoparticles. The research aims to develop more effective drug delivery systems by optimizing these carrier properties.",
+  "results": "The study investigates how drug-polymer interactions affect the release kinetics of Poly(lactic-co-glycolic acid) (PLGA) and Polylactide-co-Glycolide (PLA)/Polyethylene Glycol (PEG) nanoparticles (NPs). The research provides insights into optimizing these systems to enhance their performance in controlled drug delivery applications.",
   "references": [],
   "funding_sources": [],
   "conference_info": {
@@ -37,8 +37,8 @@
     "date": null
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-18T16:07:19.906679",
-    "processing_time": 36.21995425224304,
+    "timestamp": "2025-08-18T16:43:16.697186",
+    "processing_time": 47.49960231781006,
     "method": "qwen_local",
     "model": "Qwen2.5-1.5B-Instruct",
     "device": "cuda:0",
