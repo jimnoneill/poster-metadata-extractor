@@ -2,9 +2,9 @@
 
 A comprehensive toolkit for extracting structured metadata from scientific poster PDFs using three distinct approaches, each optimized for different use cases and accuracy requirements.
 
-## ⚠️ IMPORTANT DISCLAIMER
+## Important Note on Accuracy
 
-**ALL ACCURACY ESTIMATES ARE UNVALIDATED** - These are rough estimates based on limited testing and theoretical benchmarks. **Actual accuracy can only be determined through proper validation using Cochran's random sampling methodology** as outlined in this document. Do not rely on these estimates for production decisions without proper validation.
+**All accuracy estimates are unvalidated** - these are rough estimates based on limited testing and theoretical benchmarks. Actual accuracy can only be determined through proper validation using Cochran's random sampling methodology as outlined in this document. Please validate before production use.
 
 ## Three-Method Approach
 
@@ -14,7 +14,7 @@ A comprehensive toolkit for extracting structured metadata from scientific poste
 Cost-effective API-based extraction using DeepSeek's language model.
 
 **Performance Characteristics:**
-- **Estimated Accuracy**: 85-90% ⚠️ **(UNVALIDATED - requires Cochran sampling validation)**
+- **Estimated Accuracy**: 85-90% (unvalidated - requires Cochran sampling validation)
 - **Cost**: ~$0.003 per poster (200x cheaper than GPT-4)
 - **Speed**: 5-15 seconds per poster  
 - **Hallucination Risk**: Low-Medium (mitigated by structured prompts)
@@ -28,7 +28,7 @@ Cost-effective API-based extraction using DeepSeek's language model.
 Local small language model (1.5B parameters) for privacy-sensitive environments.
 
 **Performance Characteristics:**
-- **Estimated Accuracy**: 80-85% ⚠️ **(UNVALIDATED - requires Cochran sampling validation)**
+- **Estimated Accuracy**: 80-85% (unvalidated - requires Cochran sampling validation)
 - **Cost**: $0 (runs locally, only electricity costs)
 - **Speed**: 10-40 seconds per poster (single), ~1.1s per poster (RTX 4090 batched)
 - **Hallucination Risk**: Low (structured prompting)
@@ -44,10 +44,10 @@ Local small language model (1.5B parameters) for privacy-sensitive environments.
 ### Method 3: BioELECTRA+CRF (DEMO)
 **Notebooks**: [`03_method3_bioelectra_crf_demo.ipynb`](notebooks/03_method3_bioelectra_crf_demo.ipynb)
 
-⚠️ **DEMONSTRATION ONLY** - Future possibility requiring 500-1000 labeled posters for training.
+**DEMONSTRATION ONLY** - Future possibility requiring 500-1000 labeled posters for training.
 
 **Performance Characteristics (Estimated):**
-- **Estimated Accuracy**: 85-92% ⚠️ **(THEORETICAL - based on BLURB benchmarks, requires training & validation)**
+- **Estimated Accuracy**: 85-92% (theoretical - based on BLURB benchmarks, requires training & validation)
 - **Cost**: $0 (after training - local inference only)  
 - **Speed**: <0.5 seconds per poster (fastest of all methods)
 - **Hallucination Risk**: 0% (deterministic sequence labeling)
