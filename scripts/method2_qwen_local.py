@@ -13,7 +13,32 @@ import time
 from datetime import datetime
 from typing import Dict, List, Any, Optional
 import warnings
+import os
+import logging
+
+# Suppress all warnings and errors
 warnings.filterwarnings('ignore')
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
+
+# Suppress protobuf and transformers warnings
+logging.getLogger("transformers").setLevel(logging.ERROR)
+logging.getLogger("torch").setLevel(logging.ERROR)
+
+# Try to suppress specific protobuf MessageFactory warnings
+try:
+    import google.protobuf.message
+    # Monkey patch to suppress the GetPrototype AttributeError
+    if hasattr(google.protobuf.message, 'MessageFactory'):
+        original_init = google.protobuf.message.MessageFactory.__init__
+        def patched_init(self):
+            try:
+                original_init(self)
+            except AttributeError:
+                pass
+        google.protobuf.message.MessageFactory.__init__ = patched_init
+except (ImportError, AttributeError):
+    pass
 
 def extract_text_from_pdf(pdf_path: str) -> str:
     """Extract text from PDF"""
@@ -34,32 +59,37 @@ class QwenExtractor:
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
         print(f"📥 Loading {model_name}...")
         
-        # Load tokenizer
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        if self.tokenizer.pad_token is None:
-            self.tokenizer.pad_token = self.tokenizer.eos_token
+        # Load tokenizer with stderr redirection
+        import sys
+        from contextlib import redirect_stderr
+        import io
         
-        # Load model with quantization if CUDA available
-        if torch.cuda.is_available():
-            bnb_config = BitsAndBytesConfig(
-                load_in_8bit=True,
-                bnb_8bit_compute_dtype=torch.float16
-            )
+        with redirect_stderr(io.StringIO()):
+            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+            if self.tokenizer.pad_token is None:
+                self.tokenizer.pad_token = self.tokenizer.eos_token
             
-            self.model = AutoModelForCausalLM.from_pretrained(
-                model_name,
-                quantization_config=bnb_config,
-                device_map="auto",
-                torch_dtype=torch.float16
-            )
-        else:
-            # CPU loading
-            self.model = AutoModelForCausalLM.from_pretrained(
-                model_name,
-                torch_dtype=torch.float32
-            )
-            device = torch.device('cpu')
-            self.model = self.model.to(device)
+            # Load model with quantization if CUDA available
+            if torch.cuda.is_available():
+                bnb_config = BitsAndBytesConfig(
+                    load_in_8bit=True,
+                    bnb_8bit_compute_dtype=torch.float16
+                )
+                
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    model_name,
+                    quantization_config=bnb_config,
+                    device_map="auto",
+                    torch_dtype=torch.float16
+                )
+            else:
+                # CPU loading
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    model_name,
+                    torch_dtype=torch.float32
+                )
+                device = torch.device('cpu')
+                self.model = self.model.to(device)
         
         self.model.eval()
         print(f"✅ Model loaded successfully")

@@ -13,6 +13,10 @@ from typing import Dict, List, Optional, Any
 import time
 from openai import OpenAI
 import requests
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configuration
 CONFIG = {
