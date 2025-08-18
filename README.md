@@ -285,8 +285,9 @@ from src.method1_deepseek_api import extract_poster_metadata
 results = extract_poster_metadata("data/your-poster.pdf")
 
 # Method 2: Qwen Local  
-from src.method2_qwen_local import extract_poster_metadata_qwen
-results = extract_poster_metadata_qwen("data/your-poster.pdf")
+from src.method2_qwen_local import QwenExtractor, extract_text_from_pdf
+extractor = QwenExtractor()
+results = extractor.extract_poster_metadata("data/your-poster.pdf")
 
 # Method 3: Demo only
 from src.method3_bioelectra_crf_demo import bioelectra_crf_demo

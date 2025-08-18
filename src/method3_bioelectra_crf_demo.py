@@ -168,7 +168,7 @@ if __name__ == "__main__":
     print(f"   • Training time: {training_req['training_time']}")
     
     # Save demo results
-    output_path = Path("/home/joneill/poster_project/output/method3_bioelectra_demo.json")
+    output_path = Path("output/method3_bioelectra_demo.json")
     output_path.parent.mkdir(exist_ok=True)
     
     with open(output_path, 'w') as f:

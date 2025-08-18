@@ -238,7 +238,7 @@ def extract_poster_metadata_qwen(pdf_path: str) -> Dict[str, Any]:
 
 if __name__ == "__main__":
     # Test the extraction
-    pdf_path = "/home/joneill/poster_project/data/test-poster.pdf"
+    pdf_path = "data/test-poster.pdf"
     
     if Path(pdf_path).exists():
         print("🚀 Running Method 2: Qwen Local Extraction")
@@ -258,7 +258,7 @@ if __name__ == "__main__":
             print(f"⏱️  Processing time: {results['extraction_metadata']['processing_time']:.2f}s")
             
             # Save results
-            output_path = Path("/home/joneill/poster_project/output/method2_qwen_results.json")
+            output_path = Path("output/method2_qwen_results.json")
             output_path.parent.mkdir(exist_ok=True)
             
             with open(output_path, 'w') as f:
