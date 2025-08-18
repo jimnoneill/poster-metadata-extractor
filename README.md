@@ -66,17 +66,23 @@ We strongly recommend validating extraction quality using **Cochran's formula** 
 
 ```
 n = (Z² × p × (1-p)) / e²
+n_adjusted = n / (1 + (n-1)/N)  # Finite population correction
 ```
 
 **Where:**
 - **Z** = 1.96 (95% confidence level)
 - **p** = 0.5 (maximum variability assumption)
 - **e** = 0.05 (±5% margin of error)
+- **N** = total population size (number of posters)
 
-**Sample Sizes by Dataset:**
-- **1000 posters**: Validate ~384 randomly selected outputs
-- **500 posters**: Validate ~218 randomly selected outputs  
-- **100 posters**: Validate ~80 randomly selected outputs
+**Sample Sizes by Dataset (with finite population correction):**
+- **100 posters**: Validate ~80 randomly selected outputs (79.5%)
+- **500 posters**: Validate ~217 randomly selected outputs (43.5%)
+- **1000 posters**: Validate ~278 randomly selected outputs (27.8%)
+- **10,000 posters**: Validate ~370 randomly selected outputs (3.7%)
+- **100,000+ posters**: Validate ~383 randomly selected outputs (0.4%)
+
+**Key Insight**: For smaller datasets (<1000), you must validate a high percentage. Only when scaling to tens of thousands of posters does the required validation percentage become practical (under 5%).
 
 **Validation Process:**
 1. Extract metadata from full dataset
