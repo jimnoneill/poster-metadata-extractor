@@ -249,8 +249,7 @@ poster_project/
 │   └── Take-home-task.pdf               # Original assignment
 ├── output/                              # Generated extraction results
 │   ├── method1_deepseek_results.json    # DeepSeek API results
-│   ├── method2_qwen_results.json        # Qwen local results
-│   └── method3_bioelectra_demo.json     # Demo results
+│   └── method2_qwen_results.json        # Qwen local results
 ├── requirements.txt                     # Python dependencies
 ├── env.example                          # Environment variables template
 └── README.md                            # This documentation

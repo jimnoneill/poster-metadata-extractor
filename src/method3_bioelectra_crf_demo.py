@@ -167,13 +167,8 @@ if __name__ == "__main__":
     print(f"   • Expected accuracy: {training_req['expected_accuracy']}")
     print(f"   • Training time: {training_req['training_time']}")
     
-    # Save demo results
-    output_path = Path("output/method3_bioelectra_demo.json")
-    output_path.parent.mkdir(exist_ok=True)
-    
-    with open(output_path, 'w') as f:
-        json.dump(results, f, indent=2)
-    
-    print(f"\\n💾 Demo results saved to: {output_path}")
-    print("✅ Method 3 demo completed!")
-    print("\\n⚠️  To implement: Collect 500-1000 labeled posters and train BioELECTRA+CRF model")
+    # Note: Method 3 is demo only - no output file generated
+    print("\\n✅ Method 3 demo completed!")
+    print("📋 DEMO ONLY - No output file generated")
+    print("⚠️  To implement: Collect 500-1000 labeled posters and train BioELECTRA+CRF model")
+    print("💡 Use Methods 1 & 2 to generate training data for this approach")

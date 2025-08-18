@@ -57,7 +57,7 @@
     "date": "15-17 May 2024"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-18T15:25:33.483914",
+    "timestamp": "2025-08-18T15:31:13.857155",
     "method": "bioelectra_crf_demo",
     "model": "kamalkraj/bioelectra-base-discriminator-pubmed",
     "status": "DEMO - Requires training data",
