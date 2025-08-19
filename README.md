@@ -409,10 +409,10 @@ MIT License - see LICENSE file for details.
 
 ## Citation
 ```bibtex
-@software{oneill2024poster,
+@software{oneill2025poster,
   title={Scientific Poster Metadata Extraction Toolkit},
-  author={O'Neill, Jim},
-  year={2024},
+  author={ONeill, Jamey},
+  year={2025},
   url={https://github.com/jimnoneill/poster-metadata-extractor}
 }
 ```
