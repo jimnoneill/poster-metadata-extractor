@@ -29,7 +29,7 @@ This repository directly addresses the original take-home task requirements with
 2. **Text Preprocessing**: Clean and structure extracted text for model consumption
 3. **Metadata Extraction**: Apply selected method (API LLM, Local LLM, or Transformer+CRF)
 4. **JSON Output**: Structure results according to Table 1 requirements (see below)
-5. **Validation**: Apply Cochran sampling methodology for quality assessment
+5. **Validation**: Apply Cochran sampling methodology for expedited manual quality assessment
 
 **Table 1 Metadata Fields (from original task):**
 - **Title of the poster**
