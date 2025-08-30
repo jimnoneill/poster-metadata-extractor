@@ -55,14 +55,20 @@
       "journal": "2296-4185\n\nBiomed. Pharmacother. - Fu, Y. S. et al. (2021) 111888\n\nInternational Journal of Pharmaceutics - Chiesa et al. (2022) 122368"
     }
   ],
-  "funding_sources": [],
+  "funding_sources": [
+    "2020",
+    "8",
+    "1\u201312.",
+    "(2)   Alves",
+    "A. et al. J. Control. Release 2019"
+  ],
   "conference_info": {
     "location": "Bari, Italy",
     "date": "May 15-17"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T19:55:03.403730",
-    "processing_time": 49.49191069602966,
+    "timestamp": "2025-08-29T20:37:45.437381",
+    "processing_time": 59.28545379638672,
     "method": "qwen_local",
     "model": "Qwen2.5-1.5B-Instruct",
     "device": "cuda:0",
