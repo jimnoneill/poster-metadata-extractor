@@ -45,7 +45,7 @@
     "release kinetics"
   ],
   "methods": "The study involved the synthesis of NPs using microfluidic technology, the encapsulation of CURC in the NPs, and the release of the CURC from the NPs.",
-  "results": "{'1. Physical Properties of NPs': 'The NPs had uniform size distribution with a polydispersity index (PDI) of less than 0.2, as observed by transmission electron microscopy (TEM). The NPs were hydrophobic and had a high encapsulation efficiency (EE%) of 61.91 \u00b1 1.86% for CURC-loaded PLGA NPs and 13.74 \u00b1 0.97% for CURC-loaded PLA/PEG micelles.', '2. Release Kinetics of NPs': 'The CURC-loaded NPs showed a slower release rate compared to the CURC-loaded PLA/PEG micelles. The CURC-loaded NPs had a h",
+  "results": "{'1. Physical Properties of NPs': 'The NPs had uniform size distribution with a polydispersity index (PDI) of less than 0.2, as observed by transmission electron microscopy (TEM). The NPs were hydrophobic and had a high encapsulation efficiency (EE%) of 61.91 \u00b1 1.86% for CURC-loaded PLGA NPs and 13.74 \u00b1 0.97% for CURC-loaded PLA/PEG micelles.', '2. Release Kinetics of NPs': 'The CURC-loaded NPs showed a slower release rate compared to the CURC-loaded PLA/PEG micelles. The CURC-loaded NPs had a higher encapsulation efficiency (EE%) of 61.91 \u00b1 1.86% compared to 13.74 \u00b1 0.97% for the CURC-loaded PLA/PEG micelles.', '3. Cytotoxicity & Antimicrobial Activity': 'The CURC-loaded NPs showed a lower cytotoxic effect on NHDFs compared to the CURC-loaded PLGA NPs. The CURC-loaded NPs had a higher reduction in cell viability compared to the CURC-loaded PLGA NPs after 2, 4, and 24 h of treatment.'}",
   "references": [],
   "funding_sources": [],
   "conference_info": {}
