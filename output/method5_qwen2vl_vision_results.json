@@ -1,85 +1,52 @@
 {
-  "title": "Influence of Drug-Polymer Interactions on Release Kinetics of PLGA and PLA/PEG NPs",
+  "title": "INFLUENCE OF DRUG-POLYMER INTERACTIONS ON RELEASE KINETICS OF PLGA AND PLA/PEG NPS",
   "authors": [
     {
       "name": "Merve Gul",
       "affiliations": [
-        "University of Pavia"
+        "Department of Drug Sciences, University of Pavia"
       ],
       "email": null
     },
     {
       "name": "Ida Genta",
       "affiliations": [
-        "University of Pavia"
+        "Department of Chemical Engineering, Universitat Polit\u00e8cnica de Catalunya (UPC-EEBE)"
       ],
       "email": null
     },
     {
       "name": "Maria M. Perez Madrigal",
       "affiliations": [
-        "Universitat Polit\u00e8cnica de Catalunya"
+        "Barcelona Research Center for Multiscale Science and Engineering, EEBE, Universitat Polit\u00e8cnica de Catalunya"
       ],
       "email": null
     },
     {
       "name": "Carlos Aleman",
       "affiliations": [
-        "Universitat Polit\u00e8cnica de Catalunya"
+        "Barcelona Research Center for Multiscale Science and Engineering, EEBE, Universitat Polit\u00e8cnica de Catalunya"
       ],
       "email": null
     },
     {
       "name": "Enrica Chiesa",
       "affiliations": [
-        "University of Pavia"
+        "Barcelona Research Center for Multiscale Science and Engineering, EEBE, Universitat Polit\u00e8cnica de Catalunya"
       ],
       "email": null
     }
   ],
-  "summary": "The study investigates the influence of drug-polymer interactions on the release kinetics of PLGA and PLA/PEG nanoparticles.",
+  "summary": "The influence of drug-polymer interactions on the release kinetics of PLGA and PLA/PEG NPs was investigated.",
   "keywords": [
     "drug-polymer interactions",
-    "release kinetics",
-    "PLGA",
-    "PLA/PEG",
-    "nanoparticles"
+    "PLGA NPs",
+    "PLA/PEG NPs",
+    "release kinetics"
   ],
-  "methods": "The study used a microfluidic chip to synthesize and deliver CURC-loaded PLGA and PLA/PEG nanoparticles.",
-  "results": "CURC-loaded PLGA nanoparticles showed higher encapsulation efficiency and slower release kinetics compared to PLA/PEG nanoparticles, with lower cytotoxicity on NHDFs.",
-  "funding_sources": [
-    "European Union's research and innovation programme under the Marie Sk\u0142odowska-Curie grant agreement No 101072645"
-  ],
-  "conference_info": {
-    "location": "Bari, Italy",
-    "date": "15-17 May"
-  },
-  "references": [
-    {
-      "title": "Front. Bioeng. Biotechnol.",
-      "authors": "Vega-V\u00e1squez, P. et al.",
-      "year": 2020,
-      "journal": "Frontiers in Bioengineering and Biotechnology"
-    },
-    {
-      "title": "Biomed. Pharmacother.",
-      "authors": "Fu, Y. S. et al.",
-      "year": 2021,
-      "journal": "Biomedical Pharmacotherapy"
-    },
-    {
-      "title": "International Journal of Pharmaceutics",
-      "authors": "Chiesa, E. et al.",
-      "year": 2022,
-      "journal": "International Journal of Pharmaceutics"
-    }
-  ],
-  "extraction_metadata": {
-    "timestamp": "2025-08-30T14:24:57.296672",
-    "processing_time": 42.292336225509644,
-    "method": "qwen2vl_vision_extraction",
-    "model": "Qwen/Qwen2-VL-2B-Instruct",
-    "image_count": 1,
-    "image_dpi": 200
-  }
+  "methods": "The study involved the synthesis of NPs using microfluidic technology, the encapsulation of CURC in the NPs, and the release of the CURC from the NPs.",
+  "results": "{'1. Physical Properties of NPs': 'The NPs had uniform size distribution with a polydispersity index (PDI) of less than 0.2, as observed by transmission electron microscopy (TEM). The NPs were hydrophobic and had a high encapsulation efficiency (EE%) of 61.91 \u00b1 1.86% for CURC-loaded PLGA NPs and 13.74 \u00b1 0.97% for CURC-loaded PLA/PEG micelles.', '2. Release Kinetics of NPs': 'The CURC-loaded NPs showed a slower release rate compared to the CURC-loaded PLA/PEG micelles. The CURC-loaded NPs had a h",
+  "references": [],
+  "funding_sources": [],
+  "conference_info": {}
 }
