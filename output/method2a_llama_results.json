@@ -2,6 +2,14 @@
   "title": "INFLUENCE OF DRUG-POLYMER INTERACTIONS ON RELEASE KINETICS OF PLGA AND PLA/PEG NPS",
   "authors": [
     {
+      "name": "Merve Gul",
+      "affiliations": [
+        "University of Pavia",
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
+      "email": null
+    },
+    {
       "name": "Ida Genta",
       "affiliations": [
         "University of Pavia"
@@ -11,7 +19,15 @@
     {
       "name": "Maria M. Perez Madrigal",
       "affiliations": [
-        "Department of Chemical Engineering, Universitat Polite\u0300cnica de Catalunya"
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
+      "email": null
+    },
+    {
+      "name": "Carlos Aleman",
+      "affiliations": [
+        "Universitat Polit\u00e8cnica de Catalunya",
+        "Barcelona Research Center for Multiscale Science and Engineering"
       ],
       "email": null
     },
@@ -23,54 +39,53 @@
       "email": null
     }
   ],
-  "summary": "Here is a 2-sentence summary of the research:\n\nThe study investigates the influence of drug-polymer interactions on release kinetics of poly(lactic-co-glycolic acid) (PLGA) and poly(lactic acid)-polyethylene glycol (PLA/PEG) nanoparticles (NPs) for antimicrobial resistance (AMR) treatment. The researchers aim to develop novel drug delivery systems using microfluidic-based synthesis of nano-sized carriers for improved encapsulation efficiency and controlled release kinetics.",
+  "summary": "Here is a 2-sentence summary:\n\nThe study investigates the influence of drug-polymer interactions on release kinetics of poly(lactic-co-glycolic acid) (PLGA) and poly(lactic acid)-poly(ethylene glycol) (PLA/PEG) nanoparticles (NPs) used in drug delivery systems. The goal is to develop novel strategies to combat antimicrobial resistance by optimizing NPs' characteristics and encapsulation efficiency using microfluidic-based synthesis.",
   "keywords": [
     "PLGA",
     "PLA",
     "PEG",
     "NPS",
-    "AMR"
+    "AMR",
+    "Microfluidics"
   ],
-  "methods": "\u2022 Microfluidic-based synthesis of nano-sized carriers for drug delivery systems (NDDS) was used to produce PLGA and PLA/PEG nanoparticles.\n\u2022 Antimicrobial resistance (AMR) was studied as a global health threat.\n\u2022 Novel drug delivery strategies were explored.\n\u2022 Encapsulation efficiency was improved through precise control over nanocarrier characteristics.",
-  "results": "Here are the main research findings:\n\n* Release kinetics of PLGA and PLA/PEG NPs were influenced by drug-polymer interactions.\n* No specific numbers or measurements mentioned in the provided text.",
+  "methods": "\u2022 Microfluidic-based synthesis of nano-sized carriers for drug delivery systems (NDDS)",
+  "results": "Here are the main research findings:\n\n* The release kinetics of PLGA and PLA/PEG nanoparticles were influenced by drug-polymer interactions.\n* No specific numbers or measurements mentioned in the provided text.",
   "references": [
     {
-      "title": "Front. Bioeng. Biotechnol.",
-      "authors": "Vega-V\u00e1quez, P. et al.",
+      "title": "Frontiers in Bioengineering and Biotechnology",
+      "authors": "Vega-V\u00e1zquez, P. et al.",
       "year": 2020,
-      "journal": ""
+      "journal": "Front. Bioeng. Biotechnol."
     },
     {
-      "title": "Biomed. Pharmacother.",
-      "authors": "Fu, Y. S. et al.",
-      "year": 2021,
-      "journal": ""
-    },
-    {
-      "title": "International Journal of Pharmaceutics",
+      "title": "Drug delivery systems",
       "authors": "Chiesa et al.",
       "year": 2022,
-      "journal": ""
+      "journal": "International Journal of Pharmaceutics"
+    },
+    {
+      "title": "Biomedicine & Pharmacotherapy",
+      "authors": "Fu, Y. S. et al.",
+      "year": 2021,
+      "journal": "Biomed. Pharmacother."
     }
   ],
   "funding_sources": [
-    "(2)   Zhang",
-    "Y. et al. J. Control. Release 2019",
-    "294",
-    "110-119.",
-    "(3)   Wang"
+    "101072645",
+    "Marie Sk\u0142odowska-Curie grant agreement No 101072645",
+    "European Union\u2019s research and innovation programme under the Marie Sk\u0142odowska-Curie grant agreement No 101072645"
   ],
   "conference_info": {
-    "location": "Bari, Italy",
-    "date": "15-17 May"
+    "location": "Location: Bari, Italy\nDates: 15-17 May",
+    "date": null
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T20:36:32.813180",
-    "processing_time": 75.23607206344604,
-    "method": "llama_local",
+    "timestamp": "2025-08-29T22:13:17.499377",
+    "processing_time": 45.840309381484985,
+    "method": "perfect_llama_from_scratch",
     "model": "Meta-Llama-3-8B-Instruct",
     "device": "cuda:0",
-    "text_length": 3732,
+    "text_length": 3707,
     "do_sample": false,
     "max_tokens": 150
   }
