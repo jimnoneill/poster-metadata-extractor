@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Method 4: Mistral-7B-Instruct Local Extraction
-Elegant and simple poster metadata extraction using Mistral-7B-Instruct
+Simple poster metadata extraction using Mistral-7B-Instruct
 Uses the same direct prompt style as DeepSeek but runs locally
 """
 
