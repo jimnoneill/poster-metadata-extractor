@@ -1,0 +1,85 @@
+{
+  "title": "Influence of Drug-Polymer Interactions on Release Kinetics of PLGA and PLA/PEG NPs",
+  "authors": [
+    {
+      "name": "Merve Gul",
+      "affiliations": [
+        "University of Pavia"
+      ],
+      "email": null
+    },
+    {
+      "name": "Ida Genta",
+      "affiliations": [
+        "University of Pavia"
+      ],
+      "email": null
+    },
+    {
+      "name": "Maria M. Perez Madrigal",
+      "affiliations": [
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
+      "email": null
+    },
+    {
+      "name": "Carlos Aleman",
+      "affiliations": [
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
+      "email": null
+    },
+    {
+      "name": "Enrica Chiesa",
+      "affiliations": [
+        "University of Pavia"
+      ],
+      "email": null
+    }
+  ],
+  "summary": "The study investigates the influence of drug-polymer interactions on the release kinetics of PLGA and PLA/PEG nanoparticles.",
+  "keywords": [
+    "drug-polymer interactions",
+    "release kinetics",
+    "PLGA",
+    "PLA/PEG",
+    "nanoparticles"
+  ],
+  "methods": "The study used a microfluidic chip to synthesize and deliver CURC-loaded PLGA and PLA/PEG nanoparticles.",
+  "results": "CURC-loaded PLGA nanoparticles showed higher encapsulation efficiency and slower release kinetics compared to PLA/PEG nanoparticles, with lower cytotoxicity on NHDFs.",
+  "funding_sources": [
+    "European Union's research and innovation programme under the Marie Sk\u0142odowska-Curie grant agreement No 101072645"
+  ],
+  "conference_info": {
+    "location": "Bari, Italy",
+    "date": "15-17 May"
+  },
+  "references": [
+    {
+      "title": "Front. Bioeng. Biotechnol.",
+      "authors": "Vega-V\u00e1squez, P. et al.",
+      "year": 2020,
+      "journal": "Frontiers in Bioengineering and Biotechnology"
+    },
+    {
+      "title": "Biomed. Pharmacother.",
+      "authors": "Fu, Y. S. et al.",
+      "year": 2021,
+      "journal": "Biomedical Pharmacotherapy"
+    },
+    {
+      "title": "International Journal of Pharmaceutics",
+      "authors": "Chiesa, E. et al.",
+      "year": 2022,
+      "journal": "International Journal of Pharmaceutics"
+    }
+  ],
+  "extraction_metadata": {
+    "timestamp": "2025-08-30T13:35:58.494614",
+    "processing_time": 43.58569931983948,
+    "method": "qwen2vl_vision_extraction",
+    "model": "Qwen/Qwen2-VL-2B-Instruct",
+    "image_count": 1,
+    "image_dpi": 200
+  }
+}
