@@ -81,8 +81,8 @@
     "date": "15-17 May"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-30T09:35:08.822655",
-    "processing_time": 107.85836052894592,
+    "timestamp": "2025-08-30T14:23:58.725106",
+    "processing_time": 108.39482975006104,
     "method": "mistral_7b_instruct_local",
     "model": "mistralai/Mistral-7B-Instruct-v0.3",
     "text_length": 3732,

@@ -75,8 +75,8 @@
     }
   ],
   "extraction_metadata": {
-    "timestamp": "2025-08-30T13:35:58.494614",
-    "processing_time": 43.58569931983948,
+    "timestamp": "2025-08-30T14:24:57.296672",
+    "processing_time": 42.292336225509644,
     "method": "qwen2vl_vision_extraction",
     "model": "Qwen/Qwen2-VL-2B-Instruct",
     "image_count": 1,
