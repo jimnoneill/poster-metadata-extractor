@@ -2,7 +2,7 @@
   "title": "Influence of Drug-Polymer Interactions on Release Kinetics of PLGA and PLA/PET Nanoparticles",
   "authors": [
     {
-      "name": "Gul",
+      "name": "Merve Gul",
       "affiliations": [],
       "email": null
     },
@@ -37,15 +37,46 @@
   ],
   "methods": "Microfluidic-based synthesis",
   "results": "The results section of the poster does not provide any specific numerical measurements or detailed outcomes related to drug-polymer interactions on release kinetics of PLGA and PLA/PEG nanoparticles. The abstract focuses on introducing the topic but lacks concrete data points.",
-  "references": [],
+  "references": [
+    {
+      "title": "\"Release Kinetics of NPs\"",
+      "authors": "",
+      "year": null,
+      "journal": ""
+    },
+    {
+      "title": "Dh (nm)",
+      "authors": "",
+      "year": null,
+      "journal": ""
+    },
+    {
+      "title": "\u03b6 (mV)",
+      "authors": "",
+      "year": null,
+      "journal": ""
+    },
+    {
+      "title": "EE (%)",
+      "authors": "",
+      "year": null,
+      "journal": ""
+    },
+    {
+      "title": "Loading",
+      "authors": "",
+      "year": null,
+      "journal": ""
+    }
+  ],
   "funding_sources": [],
   "conference_info": {
     "location": "Bari, Italy",
-    "date": "15-17 May"
+    "date": "May 15-17"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T18:53:25.341139",
-    "processing_time": 25.1530282497406,
+    "timestamp": "2025-08-29T19:09:54.848382",
+    "processing_time": 37.19585084915161,
     "method": "qwen_local",
     "model": "Qwen2.5-1.5B-Instruct",
     "device": "cuda:0",

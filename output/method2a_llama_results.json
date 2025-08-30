@@ -39,14 +39,20 @@
   "results": "\u2022 The release kinetics of PLGA and PLA/PEG NPs were influenced by drug-polymer interactions.\n\u2022 The encapsulation efficiency was improved using microfluidic-based synthesis of nano-sized carriers for drug delivery systems.",
   "references": [
     {
-      "title": "",
-      "authors": "1",
+      "title": "Here are the extracted references:\n\nMicrofluidic-based synthesis of nano-sized carriers for drug delivery systems",
+      "authors": "(1)",
       "year": null,
       "journal": ""
     },
     {
-      "title": "",
-      "authors": "2, 3",
+      "title": "Novel drug delivery strategies",
+      "authors": "(1)",
+      "year": null,
+      "journal": ""
+    },
+    {
+      "title": "(2,3)",
+      "authors": "",
       "year": null,
       "journal": ""
     }
@@ -55,12 +61,12 @@
     "None found."
   ],
   "conference_info": {
-    "location": null,
-    "date": null
+    "location": "Bari, Italy",
+    "date": "15-17 May"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T18:54:14.923235",
-    "processing_time": 29.496798753738403,
+    "timestamp": "2025-08-29T19:10:40.370780",
+    "processing_time": 32.085790157318115,
     "method": "llama_local",
     "model": "Meta-Llama-3-8B-Instruct",
     "device": "cuda:0",
