@@ -2,32 +2,28 @@
   "title": "INFLUENCE OF DRUG-POLYMER INTERACTIONS ON RELEASE KINETICS OF PLGA AND PLA/PEG NPS",
   "authors": [
     {
-      "name": "Merve Gul",
-      "affiliations": [],
-      "email": null
-    },
-    {
       "name": "Ida Genta",
-      "affiliations": [],
+      "affiliations": [
+        "University of Pavia"
+      ],
       "email": null
     },
     {
       "name": "Maria M. Perez Madrigal",
-      "affiliations": [],
-      "email": null
-    },
-    {
-      "name": "Carlos Aleman",
-      "affiliations": [],
+      "affiliations": [
+        "Department of Chemical Engineering, Universitat Polite\u0300cnica de Catalunya"
+      ],
       "email": null
     },
     {
       "name": "Enrica Chiesa",
-      "affiliations": [],
+      "affiliations": [
+        "University of Pavia"
+      ],
       "email": null
     }
   ],
-  "summary": "The study investigates the influence of drug-polymer interactions on release kinetics of poly(lactic-co-glycolic acid) (PLGA) and poly(lactic acid)-polyethylene glycol (PLA/PEG) nanoparticles. The researchers aim to develop novel drug delivery systems to combat antimicrobial resistance.",
+  "summary": "Here is a 2-sentence summary of the research:\n\nThe study investigates the influence of drug-polymer interactions on release kinetics of poly(lactic-co-glycolic acid) (PLGA) and poly(lactic acid)-polyethylene glycol (PLA/PEG) nanoparticles (NPs) for antimicrobial resistance (AMR) treatment. The researchers aim to develop novel drug delivery systems using microfluidic-based synthesis of nano-sized carriers for improved encapsulation efficiency and controlled release kinetics.",
   "keywords": [
     "PLGA",
     "PLA",
@@ -35,24 +31,18 @@
     "NPS",
     "AMR"
   ],
-  "methods": "\u2022 Microfluidic-based synthesis of nano-sized carriers for drug delivery systems (NDDS)",
-  "results": "\u2022 The release kinetics of PLGA and PLA/PEG NPs were influenced by drug-polymer interactions.\n\u2022 The encapsulation efficiency was improved using microfluidic-based synthesis of nano-sized carriers for drug delivery systems.",
+  "methods": "\u2022 Microfluidic-based synthesis of nano-sized carriers for drug delivery systems (NDDS) was used to produce PLGA and PLA/PEG nanoparticles.\n\u2022 Antimicrobial resistance (AMR) was studied as a global health threat.\n\u2022 Novel drug delivery strategies were explored.\n\u2022 Encapsulation efficiency was improved through precise control over nanocarrier characteristics.",
+  "results": "Here are the main research findings:\n\n* Release kinetics of PLGA and PLA/PEG NPs were influenced by drug-polymer interactions.\n* No specific numbers or measurements mentioned in the provided text.",
   "references": [
     {
-      "title": "Here are the extracted references:\n\nMicrofluidic-based synthesis of nano-sized carriers for drug delivery systems",
+      "title": "Here are the extracted references:\n\nDRUG delivery systems",
       "authors": "(1)",
       "year": null,
       "journal": ""
     },
     {
-      "title": "Novel drug delivery strategies",
-      "authors": "(1)",
-      "year": null,
-      "journal": ""
-    },
-    {
-      "title": "(2,3)",
-      "authors": "",
+      "title": "NPs synthesis",
+      "authors": "(2), (3)",
       "year": null,
       "journal": ""
     }
@@ -65,8 +55,8 @@
     "date": "15-17 May"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T19:10:40.370780",
-    "processing_time": 32.085790157318115,
+    "timestamp": "2025-08-29T19:39:23.918978",
+    "processing_time": 48.00590896606445,
     "method": "llama_local",
     "model": "Meta-Llama-3-8B-Instruct",
     "device": "cuda:0",

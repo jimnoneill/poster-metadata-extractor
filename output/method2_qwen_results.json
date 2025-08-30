@@ -3,31 +3,41 @@
   "authors": [
     {
       "name": "Merve Gul",
-      "affiliations": [],
+      "affiliations": [
+        "University of Pavia"
+      ],
       "email": null
     },
     {
       "name": "Ida Genta",
-      "affiliations": [],
+      "affiliations": [
+        "University of Pavia"
+      ],
       "email": null
     },
     {
       "name": "Maria M. Perez Madrigal",
-      "affiliations": [],
+      "affiliations": [
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
       "email": null
     },
     {
       "name": "Carlos Aleman",
-      "affiliations": [],
+      "affiliations": [
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
       "email": null
     },
     {
       "name": "Enrica Chiesa",
-      "affiliations": [],
+      "affiliations": [
+        "University of Pavia"
+      ],
       "email": null
     }
   ],
-  "summary": "The study investigates how drug-polymer interactions affect release kinetics in poly(lactic-co-glycolic acid) (PLGA) and polylactide-co-ethylene glycol (PLA/PEG) nanoparticles, aiming to develop more effective antimicrobial drug delivery systems.",
+  "summary": "The study investigates how drug-polymer interactions affect release kinetics in poly(lactic-co-glycolic acid) (PLGA) and polylactide-co-ethylene glycol (PLA/PEG) nanoparticles, highlighting their potential as antimicrobial drug delivery systems.",
   "keywords": [
     "drug-polymer interactions",
     "release kinetics",
@@ -35,35 +45,11 @@
     "PLA/PEG",
     "nps"
   ],
-  "methods": "Microfluidic-based synthesis",
-  "results": "The results section of the poster does not provide any specific numerical measurements or detailed outcomes related to drug-polymer interactions on release kinetics of PLGA and PLA/PEG nanoparticles. The abstract focuses on introducing the topic but lacks concrete data points.",
+  "methods": "Microfluidic-based synthesis of nano-sized carriers for drug delivery systems (NDDS), precise control over nanocarrier characteristics, encapsulation efficiency improvement.",
+  "results": "Release kinetics of PLGA nanoparticles were significantly influenced by drug-polymer interactions compared to PLA/PEG nanoparticles.",
   "references": [
     {
-      "title": "\"Release Kinetics of NPs\"",
-      "authors": "",
-      "year": null,
-      "journal": ""
-    },
-    {
-      "title": "Dh (nm)",
-      "authors": "",
-      "year": null,
-      "journal": ""
-    },
-    {
-      "title": "\u03b6 (mV)",
-      "authors": "",
-      "year": null,
-      "journal": ""
-    },
-    {
-      "title": "EE (%)",
-      "authors": "",
-      "year": null,
-      "journal": ""
-    },
-    {
-      "title": "Loading",
+      "title": "--- Page 1 ---",
       "authors": "",
       "year": null,
       "journal": ""
@@ -75,8 +61,8 @@
     "date": "May 15-17"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T19:09:54.848382",
-    "processing_time": 37.19585084915161,
+    "timestamp": "2025-08-29T19:38:21.763363",
+    "processing_time": 29.22548818588257,
     "method": "qwen_local",
     "model": "Qwen2.5-1.5B-Instruct",
     "device": "cuda:0",
