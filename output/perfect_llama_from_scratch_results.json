@@ -1,0 +1,92 @@
+{
+  "title": "INFLUENCE OF DRUG-POLYMER INTERACTIONS ON RELEASE KINETICS OF PLGA AND PLA/PEG NPS",
+  "authors": [
+    {
+      "name": "Merve Gul",
+      "affiliations": [
+        "University of Pavia",
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
+      "email": null
+    },
+    {
+      "name": "Ida Genta",
+      "affiliations": [
+        "University of Pavia"
+      ],
+      "email": null
+    },
+    {
+      "name": "Maria M. Perez Madrigal",
+      "affiliations": [
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
+      "email": null
+    },
+    {
+      "name": "Carlos Aleman",
+      "affiliations": [
+        "Universitat Polit\u00e8cnica de Catalunya",
+        "Barcelona Research Center for Multiscale Science and Engineering"
+      ],
+      "email": null
+    },
+    {
+      "name": "Enrica Chiesa",
+      "affiliations": [
+        "University of Pavia"
+      ],
+      "email": null
+    }
+  ],
+  "summary": "Here is a 2-sentence summary:\n\nThe study investigates the influence of drug-polymer interactions on release kinetics of poly(lactic-co-glycolic acid) (PLGA) and poly(lactic acid)-poly(ethylene glycol) (PLA/PEG) nanoparticles (NPs) used in drug delivery systems. The goal is to develop novel strategies to combat antimicrobial resistance by optimizing NPs' characteristics and encapsulation efficiency using microfluidic-based synthesis.",
+  "keywords": [
+    "PLGA",
+    "PLA",
+    "PEG",
+    "NPS",
+    "AMR",
+    "Microfluidics"
+  ],
+  "methods": "\u2022 Microfluidic-based synthesis of nano-sized carriers for drug delivery systems (NDDS)",
+  "results": "Here are the main research findings:\n\n* The release kinetics of PLGA and PLA/PEG nanoparticles were influenced by drug-polymer interactions.\n* No specific numbers or measurements mentioned in the provided text.",
+  "references": [
+    {
+      "title": "Frontiers in Bioengineering and Biotechnology",
+      "authors": "Vega-V\u00e1zquez, P. et al.",
+      "year": 2020,
+      "journal": "Front. Bioeng. Biotechnol."
+    },
+    {
+      "title": "Drug delivery systems",
+      "authors": "Chiesa et al.",
+      "year": 2022,
+      "journal": "International Journal of Pharmaceutics"
+    },
+    {
+      "title": "Biomedicine & Pharmacotherapy",
+      "authors": "Fu, Y. S. et al.",
+      "year": 2021,
+      "journal": "Biomed. Pharmacother."
+    }
+  ],
+  "funding_sources": [
+    "101072645",
+    "Marie Sk\u0142odowska-Curie grant agreement No 101072645",
+    "European Union\u2019s research and innovation programme under the Marie Sk\u0142odowska-Curie grant agreement No 101072645"
+  ],
+  "conference_info": {
+    "location": "Location: Bari, Italy\nDates: 15-17 May",
+    "date": null
+  },
+  "extraction_metadata": {
+    "timestamp": "2025-08-29T21:25:06.837961",
+    "processing_time": 46.07811117172241,
+    "method": "perfect_llama_from_scratch",
+    "model": "Meta-Llama-3-8B-Instruct",
+    "device": "cuda:0",
+    "text_length": 3707,
+    "do_sample": false,
+    "max_tokens": 150
+  }
+}

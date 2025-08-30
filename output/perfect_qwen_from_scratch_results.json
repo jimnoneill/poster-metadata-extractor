@@ -1,0 +1,97 @@
+{
+  "title": "Influence of Drug-Polymer Interactions on Release Kinetics of PLGA and PLA/PET Nanoparticles",
+  "authors": [
+    {
+      "name": "Merve Gul",
+      "affiliations": [
+        "University of Pavia",
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
+      "email": null
+    },
+    {
+      "name": "Ida Genta",
+      "affiliations": [
+        "University of Pavia"
+      ],
+      "email": null
+    },
+    {
+      "name": "Maria M. Perez Madrigal",
+      "affiliations": [
+        "Universitat Polit\u00e8cnica de Catalunya"
+      ],
+      "email": null
+    },
+    {
+      "name": "Carlos Aleman",
+      "affiliations": [
+        "Universitat Polit\u00e8cnica de Catalunya",
+        "Barcelona Research Center for Multiscale Science and Engineering"
+      ],
+      "email": null
+    },
+    {
+      "name": "Enrica Chiesa",
+      "affiliations": [
+        "University of Pavia"
+      ],
+      "email": null
+    }
+  ],
+  "summary": "The study investigates how drug-polymer interactions affect release kinetics in poly(lactic-co-glycolic acid) (PLGA) and polylactide-co-ethylene glycol (PLA/PEG) nanoparticles, aiming to develop more effective antimicrobial drug delivery systems.",
+  "keywords": [
+    "drug-polymer interactions",
+    "release kinetics",
+    "PLGA",
+    "PLA/PEG",
+    "nps"
+  ],
+  "methods": "Microfluidic-based synthesis of nano-sized carriers for drug delivery systems (NDDS), precise control over nanocarrier characteristics, encapsulation efficiency improvement.",
+  "results": "The release kinetics of poly(lactic-co-glycolic acid) (PLGA) and polylactide-co-ethylene glycol copolymers (PLA/PEG) nanoparticles were studied under various conditions to understand their influence on drug-polymer interactions. The study found that both types of nanoparticles exhibited controlled release profiles, but differences in release rates could be attributed to varying degrees of polymer degradation and drug diffusion through the nanoparticle matrix.",
+  "references": [
+    {
+      "title": "Frontiers in Bioengineering and Biotechnology",
+      "authors": "Vega-V\u00e1zquez, P. et al.",
+      "year": 2020,
+      "journal": "Front. Bioeng. Biotechnol."
+    },
+    {
+      "title": "Drug delivery systems",
+      "authors": "Chiesa et al.",
+      "year": 2022,
+      "journal": "International Journal of Pharmaceutics"
+    },
+    {
+      "title": "International Journal of Pharmaceutics",
+      "authors": "Fu Y., et al.",
+      "year": 2021,
+      "journal": "Biomed. Pharmacother."
+    },
+    {
+      "title": "International Journal of Pharmaceutics",
+      "authors": "Chiesa et al.",
+      "year": 2022,
+      "journal": "International Journal of Pharmaceutics"
+    }
+  ],
+  "funding_sources": [
+    "101072645",
+    "Marie Sk\u0142odowska-Curie grant agreement No 101072645",
+    "European Union\u2019s research and innovation programme under the Marie Sk\u0142odowska-Curie grant agreement No 101072645"
+  ],
+  "conference_info": {
+    "location": "Location: Bari, Italy\nDates: 15-17 May",
+    "date": null
+  },
+  "extraction_metadata": {
+    "timestamp": "2025-08-29T21:27:49.645635",
+    "processing_time": 49.88540172576904,
+    "method": "perfect_qwen_from_scratch",
+    "model": "Qwen2.5-1.5B-Instruct",
+    "device": "cuda:0",
+    "text_length": 3707,
+    "do_sample": false,
+    "max_tokens": 150
+  }
+}
