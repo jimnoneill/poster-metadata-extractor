@@ -1,0 +1,88 @@
+{
+  "title": "INFLUENCE OF DRUG-POLYMER INTERACTIONS ON RELEASE KINETICS OF PLGA AND PLA/PEG NPS",
+  "authors": [
+    {
+      "name": "Merve Gul",
+      "affiliations": [
+        "University of Pavia"
+      ],
+      "email": null
+    },
+    {
+      "name": "Ida Genta",
+      "affiliations": [
+        "University of Pavia"
+      ],
+      "email": null
+    },
+    {
+      "name": "Maria M. Perez Madrigal",
+      "affiliations": [
+        "Universitat Polite\u0300cnica de Catalunya (UPC-EEBE)"
+      ],
+      "email": null
+    },
+    {
+      "name": "Carlos Aleman",
+      "affiliations": [
+        "Universitat Polite\u0300cnica de Catalunya (UPC-EEBE)",
+        "Barcelona Research Center for Multiscale Science and Engineering, EEBE, Universitat Polite\u0300cnica de Catalunya"
+      ],
+      "email": null
+    },
+    {
+      "name": "Enrica Chiesa",
+      "affiliations": [
+        "1Department of Drug Sciences, University of Pavia"
+      ],
+      "email": null
+    }
+  ],
+  "summary": "This study investigates antimicrobial drug delivery systems using microfluidic synthesis of nano-sized carriers (NDDS). The researchers focus on curcumin (CURC) encapsulated in PLGA and PLA/PEG nanoparticles (NPs), examining their physical properties, encapsulation efficiency, release kinetics, and cytotoxicity. Results indicate that CURC loaded PLGA NPs have slower release rates due to hydrophobic interactions with the polymer, and no or slight cytotoxic effects on NHDFs.",
+  "keywords": [
+    "antimicrobial resistance",
+    "drug delivery system",
+    "nanoparticles",
+    "microfluidics",
+    "curcumin",
+    "PLGA",
+    "PLA/PEG",
+    "release kinetics",
+    "cytotoxicity"
+  ],
+  "methods": "Synthesized NPs using a Y-shaped microfluidic chip, characterized by TEM, physical features, and drug loading. Evaluated release profiles, encapsulation efficiency, and cytotoxicity.",
+  "results": "Uniform size distribution of NPs with PDI <=0.2, higher encapsulation efficiency for PLGA NPs (2.81% vs 2.51% for PLA/PEG), slower release rate for CURC loaded PLGA NPs, no or slight cytotoxic effect on NHDFs.",
+  "references": [
+    {
+      "title": "Front. Bioeng. Biotechnol. 2020, 8, 2296-4185",
+      "authors": "Vega-V\u00e1squez, P. et al.",
+      "year": 2020,
+      "journal": "Frontiers in Bioengineering and Biotechnology"
+    },
+    {
+      "title": "Biomed. Pharmacother. 2021, 141, 111888",
+      "authors": "Fu, Y. S. et al.",
+      "year": 2021,
+      "journal": "Biomedical Pharmacotherapy"
+    },
+    {
+      "title": "International Journal...",
+      "authors": "Chiesa et al.",
+      "year": null,
+      "journal": "Not provided in the text"
+    }
+  ],
+  "funding_sources": [],
+  "conference_info": {
+    "location": "Bari, Italy",
+    "date": "15-17 May"
+  },
+  "extraction_metadata": {
+    "timestamp": "2025-08-30T09:20:38.537376",
+    "processing_time": 131.57883548736572,
+    "method": "mistral_7b_instruct_local",
+    "model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "text_length": 3732,
+    "quantization": "8-bit"
+  }
+}
