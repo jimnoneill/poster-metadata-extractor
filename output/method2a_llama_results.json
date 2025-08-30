@@ -61,8 +61,8 @@
     "date": "15-17 May"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T19:56:27.727599",
-    "processing_time": 65.21137952804565,
+    "timestamp": "2025-08-29T20:18:42.161241",
+    "processing_time": 64.58159899711609,
     "method": "llama_local",
     "model": "Meta-Llama-3-8B-Instruct",
     "device": "cuda:0",
