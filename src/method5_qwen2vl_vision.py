@@ -57,7 +57,7 @@ def convert_pdf_to_images(pdf_path: str, dpi: int = 200) -> List[Image.Image]:
     return images
 
 def create_vision_prompt() -> str:
-    """Create the SAME elegant DeepSeek-style prompt for vision models"""
+    """Create the same DeepSeek-style prompt for vision models"""
     return """You are a scientific metadata extraction expert. Analyze this scientific poster image and extract structured information with high precision.
 
 EXTRACTION INSTRUCTIONS:

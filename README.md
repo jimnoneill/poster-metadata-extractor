@@ -371,7 +371,7 @@ All notebooks are ready to run with pre-executed outputs:
 - **Multilingual Support**: Extend to Spanish, French, German scientific literature
 - **Batch Processing**: Implement distributed processing for large poster collections
 
-**Advanced Developments (6-12 months):**
+**Future Developments (6-12 months):**
 - **Multi-modal Architecture**: Incorporate visual layout analysis using LayoutLM
 - **Domain Adaptation**: Fine-tune models for specific scientific disciplines
 - **Active Learning**: Implement uncertainty-based sample selection for validation

@@ -44,7 +44,7 @@ def extract_text_from_pdf(pdf_path: str) -> str:
     return normalize_characters(text.strip())
 
 def create_mistral_prompt(text: str) -> str:
-    """Create the same elegant prompt style as DeepSeek for Mistral - using FULL text"""
+    """Create the same prompt style as DeepSeek for Mistral - using FULL text"""
     return f"""<s>[INST] You are a scientific metadata extraction expert. Extract structured information from this poster text with high precision.
 
 POSTER TEXT:
