@@ -2,36 +2,27 @@
   "title": "INFLUENCE OF DRUG-POLYMER INTERACTIONS ON RELEASE KINETICS OF PLGA AND PLA/PEG NPS",
   "authors": [
     {
-      "name": "Merve Gul (University of Pavia",
-      "affiliations": [],
-      "email": null
-    },
-    {
-      "name": "Department of Chemical Engineering, Universitat Polite\u0300cnica de Catalunya)",
+      "name": "Merve Gul",
       "affiliations": [],
       "email": null
     },
     {
       "name": "Ida Genta",
-      "affiliations": [
-        "University of Pavia"
-      ],
-      "email": null
-    },
-    {
-      "name": "Maria M. Perez Madrigal",
-      "affiliations": [
-        "Universitat Polite\u0300cnica de Catalunya"
-      ],
-      "email": null
-    },
-    {
-      "name": "Carlos Aleman (Universitat Polite\u0300cnica de Catalunya",
       "affiliations": [],
       "email": null
     },
     {
-      "name": "Barcelona Research Center for Multiscale Science and Engineering)",
+      "name": "Maria M. Perez Madrigal",
+      "affiliations": [],
+      "email": null
+    },
+    {
+      "name": "Carlos Aleman",
+      "affiliations": [],
+      "email": null
+    },
+    {
+      "name": "Enrica Chiesa",
       "affiliations": [],
       "email": null
     }
@@ -68,8 +59,8 @@
     "date": null
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T18:32:28.770791",
-    "processing_time": 35.916783571243286,
+    "timestamp": "2025-08-29T18:54:14.923235",
+    "processing_time": 29.496798753738403,
     "method": "llama_local",
     "model": "Meta-Llama-3-8B-Instruct",
     "device": "cuda:0",

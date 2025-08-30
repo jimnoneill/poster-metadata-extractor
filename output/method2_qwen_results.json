@@ -3,37 +3,27 @@
   "authors": [
     {
       "name": "Gul",
-      "affiliations": [
-        "University of Pavia"
-      ],
+      "affiliations": [],
       "email": null
     },
     {
-      "name": "Genta",
-      "affiliations": [
-        "Universitat Polit\u00e8cnica de Catalunya"
-      ],
+      "name": "Ida Genta",
+      "affiliations": [],
       "email": null
     },
     {
-      "name": "Perez Madrigal",
-      "affiliations": [
-        "Universitat Polit\u00e8cnica de Catalunya"
-      ],
+      "name": "Maria M. Perez Madrigal",
+      "affiliations": [],
       "email": null
     },
     {
-      "name": "Aleman",
-      "affiliations": [
-        "Universitat Polit\u00e8cnica de Catalunya"
-      ],
+      "name": "Carlos Aleman",
+      "affiliations": [],
       "email": null
     },
     {
-      "name": "Chiesa",
-      "affiliations": [
-        "University of Pavia"
-      ],
+      "name": "Enrica Chiesa",
+      "affiliations": [],
       "email": null
     }
   ],
@@ -54,8 +44,8 @@
     "date": "15-17 May"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T18:31:39.288914",
-    "processing_time": 28.787229776382446,
+    "timestamp": "2025-08-29T18:53:25.341139",
+    "processing_time": 25.1530282497406,
     "method": "qwen_local",
     "model": "Qwen2.5-1.5B-Instruct",
     "device": "cuda:0",
