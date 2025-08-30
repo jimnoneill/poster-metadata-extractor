@@ -38,20 +38,21 @@
       "email": null
     }
   ],
-  "summary": "This study investigates antimicrobial drug delivery systems using microfluidic synthesis of nano-sized carriers (NDDS). The researchers focus on curcumin (CURC) encapsulated in PLGA and PLA/PEG nanoparticles (NPs), examining their physical properties, encapsulation efficiency, release kinetics, and cytotoxicity. Results indicate that CURC loaded PLGA NPs have slower release rates due to hydrophobic interactions with the polymer, and no or slight cytotoxic effects on NHDFs.",
+  "summary": "Research investigates antimicrobial drug delivery systems using microfluidic-synthesized nano-carriers, focusing on PLGA and PLA/PEG. Results show improved encapsulation efficiency and controlled release rates for curcumin-loaded PLGA NPs due to hydrophobic interactions.",
   "keywords": [
     "antimicrobial resistance",
-    "drug delivery system",
-    "nanoparticles",
+    "drug delivery systems",
+    "nanocarriers",
     "microfluidics",
-    "curcumin",
     "PLGA",
     "PLA/PEG",
+    "curcumin",
     "release kinetics",
-    "cytotoxicity"
+    "cytotoxicity",
+    "antimicrobial activity"
   ],
-  "methods": "Synthesized NPs using a Y-shaped microfluidic chip, characterized by TEM, physical features, and drug loading. Evaluated release profiles, encapsulation efficiency, and cytotoxicity.",
-  "results": "Uniform size distribution of NPs with PDI <=0.2, higher encapsulation efficiency for PLGA NPs (2.81% vs 2.51% for PLA/PEG), slower release rate for CURC loaded PLGA NPs, no or slight cytotoxic effect on NHDFs.",
+  "methods": "Custom-built microfluidic device with a Passive Herringbone Mixer (PHBM) chip was used for synthesizing PLGA and PLA/PEG nanoparticles (NPs) via microfluidics. The encapsulation efficiency, physical properties, and release kinetics of curcumin-loaded NPs were analyzed.",
+  "results": "NPs had uniform size distribution with PDI <=0.2. Higher encapsulation efficiency (EE%) was observed for curcumin-loaded PLGA NPs compared to PLA/PEG micelles. Curcumin-loaded PLGA NPs showed slower release rates and no or slight cytotoxic effects on NHDFs. The choice of polymer composition played a crucial role in drug-polymer interactions and release kinetics.",
   "references": [
     {
       "title": "Front. Bioeng. Biotechnol. 2020, 8, 2296-4185",
@@ -66,20 +67,22 @@
       "journal": "Biomedical Pharmacotherapy"
     },
     {
-      "title": "International Journal...",
+      "title": "International Journal of Pharmaceutics, Volume 629, 2022, 122368",
       "authors": "Chiesa et al.",
-      "year": null,
-      "journal": "Not provided in the text"
+      "year": 2022,
+      "journal": "International Journal of Pharmaceutics"
     }
   ],
-  "funding_sources": [],
+  "funding_sources": [
+    "European Union's research and innovation programme under the Marie Sk\u0142odowska-Curie grant agreement No 101072645"
+  ],
   "conference_info": {
     "location": "Bari, Italy",
     "date": "15-17 May"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-30T09:20:38.537376",
-    "processing_time": 131.57883548736572,
+    "timestamp": "2025-08-30T09:35:08.822655",
+    "processing_time": 107.85836052894592,
     "method": "mistral_7b_instruct_local",
     "model": "mistralai/Mistral-7B-Instruct-v0.3",
     "text_length": 3732,

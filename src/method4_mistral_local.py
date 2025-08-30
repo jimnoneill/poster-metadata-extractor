@@ -44,11 +44,11 @@ def extract_text_from_pdf(pdf_path: str) -> str:
     return normalize_characters(text.strip())
 
 def create_mistral_prompt(text: str) -> str:
-    """Create the same elegant prompt style as DeepSeek for Mistral"""
+    """Create the same elegant prompt style as DeepSeek for Mistral - using FULL text"""
     return f"""<s>[INST] You are a scientific metadata extraction expert. Extract structured information from this poster text with high precision.
 
 POSTER TEXT:
-{text[:2500]}...
+{text}
 
 EXTRACTION INSTRUCTIONS:
 1. Look for title in ALL CAPS or large text at the top
@@ -56,7 +56,7 @@ EXTRACTION INSTRUCTIONS:
 3. Identify institutional affiliations (usually below authors)
 4. Extract 6-8 specific keywords from methods and results sections
 5. Summarize key findings concisely
-6. Find funding acknowledgments (often at bottom)
+6. Find funding acknowledgments (often at bottom) - look for "Acknowledgements" section, grant numbers, Marie Curie fellowships, EU funding
 
 Return ONLY valid JSON in this exact format:
 {{
