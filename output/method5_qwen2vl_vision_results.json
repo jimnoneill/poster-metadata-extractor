@@ -37,16 +37,42 @@
       "email": null
     }
   ],
-  "summary": "The influence of drug-polymer interactions on the release kinetics of PLGA and PLA/PEG NPs was investigated.",
+  "summary": "The study investigates the influence of drug-polymer interactions on the release kinetics of PLGA and PLA/PEG nanoparticles (NPs) in vitro.",
   "keywords": [
     "drug-polymer interactions",
-    "PLGA NPs",
-    "PLA/PEG NPs",
-    "release kinetics"
+    "NPs release kinetics",
+    "PLGA",
+    "PLA/PEG",
+    "curcumin",
+    "cell viability"
   ],
-  "methods": "The study involved the synthesis of NPs using microfluidic technology, the encapsulation of CURC in the NPs, and the release of the CURC from the NPs.",
-  "results": "{'1. Physical Properties of NPs': 'The NPs had uniform size distribution with a polydispersity index (PDI) of less than 0.2, as observed by transmission electron microscopy (TEM). The NPs were hydrophobic and had a high encapsulation efficiency (EE%) of 61.91 \u00b1 1.86% for CURC-loaded PLGA NPs and 13.74 \u00b1 0.97% for CURC-loaded PLA/PEG micelles.', '2. Release Kinetics of NPs': 'The CURC-loaded NPs showed a slower release rate compared to the CURC-loaded PLA/PEG micelles. The CURC-loaded NPs had a higher encapsulation efficiency (EE%) of 61.91 \u00b1 1.86% compared to 13.74 \u00b1 0.97% for the CURC-loaded PLA/PEG micelles.', '3. Cytotoxicity & Antimicrobial Activity': 'The CURC-loaded NPs showed a lower cytotoxic effect on NHDFs compared to the CURC-loaded PLGA NPs. The CURC-loaded NPs had a higher reduction in cell viability compared to the CURC-loaded PLGA NPs after 2, 4, and 24 h of treatment.'}",
-  "references": [],
-  "funding_sources": [],
-  "conference_info": {}
+  "methods": "The study used a microfluidic chip to synthesize NPs and micelles, and then loaded CURC into the NPs. The release kinetics of CURC from the NPs and micelles were measured over time.",
+  "results": "{'1.Physical Properties of NPs': 'NPs had uniform size distribution with PDI \u2264 0.2, consistent with TEM observations.', '2.Release Kinetics of NPs': 'CURC-loaded NPs had a slower release rate compared to CURC-loaded micelles.', '3.Cytotoxicity & Antimicrobial Activity': 'CURC-loaded NPs showed better antimicrobial activity compared to CURC-loaded micelles.'}",
+  "references": [
+    {
+      "title": "Vega-V\u00e1squez, P. et al.",
+      "authors": "Front. Bioeng. Biotechnol.",
+      "year": 2020,
+      "journal": "Front. Bioeng. Biotechnol."
+    },
+    {
+      "title": "Fu, Y. S. et al.",
+      "authors": "Biomed. Pharmacother.",
+      "year": 2021,
+      "journal": "Biomed. Pharmacother."
+    },
+    {
+      "title": "Chiesa, E. et al.",
+      "authors": "International Journal of Pharmaceutics",
+      "year": 2022,
+      "journal": "International Journal of Pharmaceutics"
+    }
+  ],
+  "funding_sources": [
+    "European Union's research and innovation programme under the Marie Sk\u0142odowska-Curie grant agreement No 101072645"
+  ],
+  "conference_info": {
+    "location": "Bari, Italy",
+    "date": "15-17 May"
+  }
 }
