@@ -49,10 +49,10 @@
   "results": "Release kinetics of PLGA nanoparticles were significantly influenced by drug-polymer interactions compared to PLA/PEG nanoparticles.",
   "references": [
     {
-      "title": "--- Page 1 ---",
-      "authors": "",
-      "year": null,
-      "journal": ""
+      "title": "Front. Bioeng. Biotechnol.",
+      "authors": "Vega-V\u00e1squez, P. et al.",
+      "year": 2020,
+      "journal": "2296-4185\n\nBiomed. Pharmacother. - Fu, Y. S. et al. (2021) 111888\n\nInternational Journal of Pharmaceutics - Chiesa et al. (2022) 122368"
     }
   ],
   "funding_sources": [],
@@ -61,8 +61,8 @@
     "date": "May 15-17"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T19:38:21.763363",
-    "processing_time": 29.22548818588257,
+    "timestamp": "2025-08-29T19:55:03.403730",
+    "processing_time": 49.49191069602966,
     "method": "qwen_local",
     "model": "Qwen2.5-1.5B-Instruct",
     "device": "cuda:0",

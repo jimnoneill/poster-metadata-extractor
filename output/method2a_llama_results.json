@@ -35,16 +35,22 @@
   "results": "Here are the main research findings:\n\n* Release kinetics of PLGA and PLA/PEG NPs were influenced by drug-polymer interactions.\n* No specific numbers or measurements mentioned in the provided text.",
   "references": [
     {
-      "title": "Here are the extracted references:\n\nDRUG delivery systems",
-      "authors": "(1)",
-      "year": null,
+      "title": "Here are the parsed references in the desired format:\n\n\"Front. Bioeng. Biotechnol.",
+      "authors": "Vega-V\u00e1quez, P. et al.",
+      "year": 2020,
       "journal": ""
     },
     {
-      "title": "NPs synthesis",
-      "authors": "(2), (3)",
-      "year": null,
+      "title": "Biomed. Pharmacother.",
+      "authors": "Fu, Y. S. et al.",
+      "year": 2021,
       "journal": ""
+    },
+    {
+      "title": "International Journal of Pharmaceutics",
+      "authors": "Chiesa et al.",
+      "year": 2022,
+      "journal": "\""
     }
   ],
   "funding_sources": [
@@ -55,8 +61,8 @@
     "date": "15-17 May"
   },
   "extraction_metadata": {
-    "timestamp": "2025-08-29T19:39:23.918978",
-    "processing_time": 48.00590896606445,
+    "timestamp": "2025-08-29T19:56:27.727599",
+    "processing_time": 65.21137952804565,
     "method": "llama_local",
     "model": "Meta-Llama-3-8B-Instruct",
     "device": "cuda:0",
